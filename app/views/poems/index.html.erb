@@ -1,0 +1,19 @@
+<h1>Listing posts</h1>
+
+<table>
+  <tr>
+    <th>poet_name</th>
+    <th>content</th>
+  </tr>
+
+  <% @poems.each do |p| %>
+      <tr>
+        <td><%= p.poet_name %></td>
+        <td><%= p.content %></td>
+        <td><%= link_to "Show" , p %></td>
+        <td><%= link_to "Delete" , poem_path(p) , method: :delete %></td>
+      </tr>
+  <% end %>
+</table>
+
+<%= link_to "New poem" , new_poem_path %>

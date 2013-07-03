@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  poet_id: 
+  user_id: 
+  content: MyString
+  poet_name: MyString
+
+two:
+  poet_id: 
+  user_id: 
+  content: MyString
+  poet_name: MyString

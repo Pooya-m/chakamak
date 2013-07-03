@@ -1,0 +1,4 @@
+Poet Name: <%= @poem.poet_name %> <br>
+Content: <%= @poem.content %> <br>
+<%= link_to "Delete" , poem_path(@poem) , method: :delete %>
+<%= link_to "Back to index" , poems_path %>
