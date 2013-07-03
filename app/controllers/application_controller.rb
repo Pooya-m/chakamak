@@ -13,5 +13,8 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:email,:password ) }
   end
 
+  #def referer
+  #  session[:return_to] ||= request.referer
+  #end
 
 end

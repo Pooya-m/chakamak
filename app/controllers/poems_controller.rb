@@ -1,6 +1,6 @@
 class PoemsController < ApplicationController
 
-  before_filter :authenticate_user!
+  before_filter :authenticate_user! , :referer
 
   def show
     @poem = Poem.find(params[:id])
@@ -15,6 +15,7 @@ class PoemsController < ApplicationController
   end
 
   def index
+
     @poems = Poem.all
   end
 

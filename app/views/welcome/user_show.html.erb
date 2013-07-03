@@ -1,0 +1,58 @@
+<p>
+<h1> List of <%= @user.user_name%> Poems!</h1>
+<table>
+  <tr>
+    <th>poet_name</th>
+    <th>content</th>
+  </tr>
+
+  <% @poems.each do |p| %>
+      <tr>
+        <td><%= p.poet_name %></td>
+        <td><%= p.content %></td>
+        <% if user_signed_in? %>
+            <% if Vote.exists?(poem_id: p.id, user_id: current_user.id) %>
+                <td> <%= link_to "Unvote" , unvote_path(p.id), method: :post %> </td>
+            <% else %>
+                <td> <%= link_to "Upvote", upvote_path(p.id), method: :post %> </td>
+            <% end %>
+        <% else %>
+        <% end %>
+        <td><%= link_to "Show", p %></td>
+        <% if user_signed_in? and p.user_id == current_user.id %>
+            <td><%= link_to "Delete", poem_path(p), method: :delete %></td>
+        <% end %>
+      </tr>
+  <% end %>
+</table>
+</p>
+<br> <br>
+
+<p>
+<h1> List of <%= @user.user_name%> Upvotes!</h1>
+<table>
+  <tr>
+    <th>poet_name</th>
+    <th>content</th>
+  </tr>
+
+  <% @upvotes.each do |u| %>
+      <tr>
+        <td><%= u.poem.poet_name %></td>
+        <td><%= u.poem.content %></td>
+        <% if user_signed_in? %>
+            <% if Vote.exists?(poem_id: u.poem.id, user_id: current_user.id) %>
+                <td> <%= link_to "Unvote" , unvote_path(u.poem.id), method: :post %> </td>
+            <% else %>
+                <td> <%= link_to "Upvote", upvote_path(u.poem.id), method: :post %> </td>
+            <% end %>
+        <% else %>
+        <% end %>
+        <td><%= link_to "Show", u.poem %></td>
+        <% if user_signed_in? and u.user_id == current_user.id %>
+            <td><%= link_to "Delete", poem_path(u.poem), method: :delete %></td>
+        <% end %>
+      </tr>
+  <% end %>
+</table>
+</p>

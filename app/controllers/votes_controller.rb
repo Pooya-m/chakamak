@@ -3,9 +3,10 @@ class VotesController < ApplicationController
   def create
     @vote = Vote.new(user_id: current_user.id, poem_id: params[:id])
     if @vote.save!
-      redirect_to poems_path
+      p session[:return_to]
+      redirect_to(:back)
     else
-      redirect_to poems_path, alert: @vote.errors.all
+      #redirect_to(:back) , alert: @vote.errors.all
     end
   end
 
@@ -13,11 +14,11 @@ class VotesController < ApplicationController
     @vote = Vote.find_by(user_id: current_user.id, poem_id: params[:id])
     if @vote.destroy!
       p "hallow"
-      redirect_to poems_path
+      redirect_to(:back)
     else
-      redirect_to poems_path , alert: @vote.errors.all
+      #redirect_to(:back) , alert: @vote.errors.all
     end
 
   end
+  end
 
-end

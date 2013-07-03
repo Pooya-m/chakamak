@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/controllers/poems_controller.rb" line="36" />
+    <bookmark url="file://$PROJECT_DIR$/app/controllers/poems_controller.rb" line="37" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" name="Default" comment="" />
     <ignored path="jamemey.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372844147411" ignored="false" />
-    <file path="/index.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372870793956" ignored="false" />
-    <file path="/routes.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372870958023" ignored="false" />
-    <file path="/application_controller.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372844719635" ignored="false" />
+    <file path="/index.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372871395352" ignored="false" />
+    <file path="/routes.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372871920574" ignored="false" />
+    <file path="/application_controller.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372874576785" ignored="false" />
     <file path="/Dummy.txt" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372867002102" ignored="false" />
     <file path="$PROJECT_DIR$/db/schema.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372867027008" ignored="false" />
     <file path="/user.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372867076319" ignored="false" />
     <file path="/poet.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372845909717" ignored="false" />
     <file path="/poem.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372867065306" ignored="false" />
-    <file path="/poems_controller.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372867685633" ignored="false" />
+    <file path="/poems_controller.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372874167104" ignored="false" />
     <file path="/_form.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372847023528" ignored="false" />
     <file path="/new.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372847071535" ignored="false" />
     <file path="/edit.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372847080096" ignored="false" />
     <file path="/show.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372848519395" ignored="false" />
-    <file path="/votes_controller.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372870896173" ignored="false" />
+    <file path="/votes_controller.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372874871408" ignored="false" />
+    <file path="/welcome_controller.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372874158014" ignored="false" />
+    <file path="/user_show.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372872682383" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,28 +43,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="vote.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/vote.rb">
+      <file leaf-file-name="welcome_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+            <state line="7" column="5" selection-start="124" selection-end="124" vertical-scroll-proportion="0.25798526">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="votes_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/votes_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="62" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+            <state line="7" column="6" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,7 +64,25 @@
       <file leaf-file-name="poems_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/poems_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="20" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="votes_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/votes_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="7" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/welcome/user_show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="22" selection-start="1022" selection-end="1022" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -80,16 +91,16 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/poems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="76" selection-start="384" selection-end="384" vertical-scroll-proportion="-8.125">
+            <state line="24" column="27" selection-start="774" selection-end="774" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="44" selection-start="202" selection-end="202" vertical-scroll-proportion="0.06993007">
+            <state line="5" column="56" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,10 +120,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/weolcome/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/weolcome_controller.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/poet.rb" />
         <option value="$PROJECT_DIR$/app/views/poems/_form.html.erb" />
@@ -121,10 +129,13 @@
         <option value="$PROJECT_DIR$/app/views/poems/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/poem.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/poems_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/poems/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/votes_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/user_show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/poems_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/votes_controller.rb" />
       </list>
     </option>
   </component>
@@ -211,6 +222,64 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="welcome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jamemey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jamemey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jamemey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jamemey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jamemey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jamemey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -313,6 +382,13 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="false" name="Production: jamemey" type="RailsRunConfigurationType" factoryName="Rails">
@@ -526,27 +602,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="60" selection-start="386" selection-end="386" vertical-scroll-proportion="0.3846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130703100338_create_poems.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/poet.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="17" selection-start="105" selection-end="105" vertical-scroll-proportion="0.14742015">
@@ -589,20 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/vote.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/poem.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="17" selection-start="158" selection-end="158" vertical-scroll-proportion="0.2948403">
@@ -610,30 +651,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/votes_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="62" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+        <state line="13" column="17" selection-start="403" selection-end="403" vertical-scroll-proportion="0.4791155">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/poems_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/vote.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="20" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/poems/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="76" selection-start="384" selection-end="384" vertical-scroll-proportion="-8.125">
+        <state line="3" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.10489511">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="202" selection-end="202" vertical-scroll-proportion="0.06993007">
+        <state line="5" column="56" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/poems/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="27" selection-start="774" selection-end="774" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/user_show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="22" selection-start="1022" selection-end="1022" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/votes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="7" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/poems_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="6" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="124" selection-end="124" vertical-scroll-proportion="0.25798526">
           <folding />
         </state>
       </provider>
