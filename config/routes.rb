@@ -1,10 +1,15 @@
 Jamemey::Application.routes.draw do
 
   devise_for :users
+
   get "welcome/index"
+  match "poems/:id/upvote" => "votes#create" , via: [:post ] , :as => :upvote
+  match "poems/:id/unvote" => "votes#destroy" , via: [:post ] , :as => :unvote
   root 'welcome#index'
 
   resources :poems
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

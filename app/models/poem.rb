@@ -6,4 +6,6 @@ class Poem < ActiveRecord::Base
   validates_presence_of :content
   validates_presence_of :poet_name
 
+  has_many :votes
+
 end
