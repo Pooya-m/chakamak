@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -35,6 +35,8 @@ end
 gem "unicorn"
 
 gem "devise", '~> 3.0.0.rc'
+
+gem "twitter-bootstrap-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
