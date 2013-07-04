@@ -46,7 +46,7 @@
       <file leaf-file-name="welcome_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="5" selection-start="124" selection-end="124" vertical-scroll-proportion="0.25798526">
+            <state line="12" column="24" selection-start="182" selection-end="182" vertical-scroll-proportion="0.28526148">
               <folding />
             </state>
           </provider>
@@ -82,7 +82,7 @@
       <file leaf-file-name="user_show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/user_show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="22" selection-start="1022" selection-end="1022" vertical-scroll-proportion="-6.25">
+            <state line="40" column="22" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,7 +91,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/poems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="27" selection-start="774" selection-end="774" vertical-scroll-proportion="-13.125">
+            <state line="24" column="27" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,7 +178,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,6 +284,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="RailsProjectView">
         <subPane>
           <PATH>
@@ -303,6 +303,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager" selected="Rake.db:migrate">
@@ -386,9 +387,15 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="Production: jamemey" type="RailsRunConfigurationType" factoryName="Rails">
@@ -519,26 +526,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1215" height="776" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="166" y="152" width="1015" height="576" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24978614" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2540633" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5004277" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.49957228" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907802" sideWeight="0.49957228" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="166" y="152" width="1015" height="576" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -604,9 +611,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/models/poet.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="105" selection-end="105" vertical-scroll-proportion="0.14742015">
-          <folding />
-        </state>
+        <state line="4" column="17" selection-start="105" selection-end="105" vertical-scroll-proportion="0.14742015" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130703155658_create_votes.rb">
@@ -618,51 +623,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/poems/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.11749347">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.11749347" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/poems/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="39" selection-start="81" selection-end="81" vertical-scroll-proportion="0.07832898">
-          <folding />
-        </state>
+        <state line="2" column="39" selection-start="81" selection-end="81" vertical-scroll-proportion="0.07832898" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/poems/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="55" selection-end="55" vertical-scroll-proportion="0.074074075">
-          <folding />
-        </state>
+        <state line="2" column="14" selection-start="55" selection-end="55" vertical-scroll-proportion="0.074074075" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/poems/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/poem.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="158" selection-end="158" vertical-scroll-proportion="0.2948403">
-          <folding />
-        </state>
+        <state line="8" column="17" selection-start="158" selection-end="158" vertical-scroll-proportion="0.2948403" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="403" selection-end="403" vertical-scroll-proportion="0.4791155">
-          <folding />
-        </state>
+        <state line="13" column="17" selection-start="403" selection-end="403" vertical-scroll-proportion="0.4791155" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/vote.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.10489511">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.10489511" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -674,14 +665,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/poems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="27" selection-start="774" selection-end="774" vertical-scroll-proportion="-13.125">
+        <state line="24" column="27" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/user_show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="22" selection-start="1022" selection-end="1022" vertical-scroll-proportion="-6.25">
+        <state line="40" column="22" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -709,7 +700,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="124" selection-end="124" vertical-scroll-proportion="0.25798526">
+        <state line="12" column="24" selection-start="182" selection-end="182" vertical-scroll-proportion="0.28526148">
           <folding />
         </state>
       </provider>
