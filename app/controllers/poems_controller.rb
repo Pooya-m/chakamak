@@ -15,8 +15,9 @@ class PoemsController < ApplicationController
   end
 
   def index
-
     @poems = Poem.all
+    @poems.sort! { |a,b| a.votes.count <=> b.votes.count }
+    @poems.reverse! 
   end
 
   def destroy
