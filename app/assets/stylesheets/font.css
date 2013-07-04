@@ -2,3 +2,21 @@
 body {
   font-family: 'Droid Arabic Naskh', serif;
 }
+table.poems {
+  white-space: pre;
+}
+
+div.new_in_index
+{
+      width: 50%;
+margin: 0px auto 0px auto
+}
+
+div.action_new_in_index {
+}
+
+div.poems_index_title {
+  background: black;
+  color: white;
+  height: relative;
+}

@@ -1,6 +1,6 @@
 class PoemsController < ApplicationController
 
-  before_filter :authenticate_user! , :referer
+  before_filter :authenticate_user!
 
   def show
     @poem = Poem.find(params[:id])
@@ -36,10 +36,11 @@ class PoemsController < ApplicationController
 
     @poem = Poem.new(params[:poem].permit(:poet_name, :content))
     @poet = Poet.find_or_initialize_by_poet_name(@poem.poet_name)
-    @poet.save!
-
+    @poet.save
     @poem.poet_id = @poet.id
     @poem.user_id = current_user.id
+    @poem.content.gsub! "\n", "            "
+    @poem.content.gsub! "\r", "            "
 
     if @poem.save
       redirect_to @poem

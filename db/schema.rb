@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130703155658) do
+ActiveRecord::Schema.define(version: 20130704192442) do
 
   create_table "poems", force: true do |t|
     t.integer  "poet_id"
     t.integer  "user_id"
-    t.string   "content"
+    t.text     "content",    limit: 255
     t.string   "poet_name"
     t.datetime "created_at"
     t.datetime "updated_at"

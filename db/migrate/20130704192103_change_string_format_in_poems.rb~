@@ -1,0 +1,9 @@
+class ChangeStringFormatInPoems < ActiveRecord::Migration
+def self.up
+   change_column :poems, :content, :text
+  end
+
+  def self.down
+   change_column :poems, :content, :string
+  end
+end

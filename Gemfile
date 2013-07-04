@@ -38,6 +38,11 @@ gem "devise", '~> 3.0.0.rc'
 
 gem "twitter-bootstrap-rails"
 
+gem "simple_form", '~> 3.0.0.rc'
+gem "devise-i18n"
+gem "rails-i18n"
+gem "font-awesome-rails", '~> 3.2.1.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

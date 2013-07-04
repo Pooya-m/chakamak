@@ -1,0 +1,24 @@
+fa:
+  delete: "حذف" 
+  poems:
+    index:
+      title: "اشعار"
+      actions: "عملیات‌ها"
+      new: "بیت جدید"
+      upvote_html: "<i class='icon-plus'></i>"
+      unvote_html: "<i class='icon-minus'></i>"
+      upvote: "می‌پسندم"
+      unvote: "نمی‌پسندم"
+      delete: "حذف"
+      poem_new: "ثبت بیت جدید"
+    form:
+      poem_new: "ثبت بیت جدید"
+      cancel: "انصراف"
+
+  activerecord:
+    models:
+      poem: 
+    attributes:
+      poem:
+        content: "محتوا"
+        poet_name: شاعر

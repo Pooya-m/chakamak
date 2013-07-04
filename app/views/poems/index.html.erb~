@@ -1,6 +1,6 @@
 <%- model_class = Poem -%>
 <div class="page-header">
-  <div class="poems_index_title" align="center" > <h1><%=t '.title'%></h1> </div>
+  <h1><%=t '.title'%></h1>
 </div>
 <table class="table table-striped poems">
   <thead>
@@ -31,13 +31,7 @@
     <% end %>
   </tbody>
 </table>
-<br> <br>
-<div class="new_in_index">
-<%= simple_form_for Poem.new, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :content %>
-  <%= f.input :poet_name %>
-  <div class="form-actions action_new_in_index">
-  <%= f.button :submit, :class => 'btn-primary' , value: t('.poem_new') %>
-  </div>
-</div>
-<% end %>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_poem_path,
+            :class => 'btn btn-primary' %>
