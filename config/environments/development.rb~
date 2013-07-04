@@ -30,5 +30,5 @@ Jamemey::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  config.assets.version = '1.1'
+  config.assets.version = '1.0'
 end
