@@ -85,10 +85,11 @@ div.footer{
 
 }
 
-h2.header2
+h4.header2
 {
     padding: 0.3em 0; border-bottom: 0px solid; overflow: hidden; zoom: 1;
 }
 p.header3{
     float: left; margin: 0px; padding: 0px;
+    overflow:hidden;
 }
