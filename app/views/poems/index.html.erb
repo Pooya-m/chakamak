@@ -24,6 +24,7 @@
   </tbody>
 </table>
 <br> <br>
+<% if user_signed_in? %>
 <div class="new_in_index">
 <%= simple_form_for Poem.new, :html => { :class => 'form-horizontal' } do |f| %>
   <%= f.input :content %>
@@ -32,4 +33,5 @@
   <%= f.button :submit, :class => 'btn-primary' , value: t('.poem_new') %>
   </div>
 </div>
+      <% end %>
 <% end %>
