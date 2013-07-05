@@ -40,7 +40,7 @@
   </div>
 </div>
 
-<div class="features">
+<div class="features" id="3">
     <div class="row-fluid">
         <% if user_signed_in? %>
         <div align="center">
@@ -70,11 +70,3 @@
 
 
 
-<h1>جام می</h1>
-<% if user_signed_in? %>
-    <%= link_to "Sign out" , destroy_user_session_path , method: :delete %>
-    <%= link_to "Edit" , edit_user_registration_path %>
-<% else %>
-    <%= link_to "Sign up" , new_user_registration_path %>
-    <%= link_to "Sign in" , new_user_session_path %>
-<% end %>

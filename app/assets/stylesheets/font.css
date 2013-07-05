@@ -77,3 +77,10 @@ ul.nav-index{
 div.sign-up-2{
     margin-top: 100px;
 }
+
+div.footer{
+        background:black;
+        color:white;
+        text-align:center;
+        padding-top: 32px;
+}

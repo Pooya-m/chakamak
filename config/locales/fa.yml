@@ -21,6 +21,11 @@ fa:
   edit_profile: ویرایش پروفایل
   profile: پروفایل شما
   sign_out: خروج
+  poems_new: ثبت بیت جدید
+  poems_submited: تعداد ابیات
+  votes_submited: امتیاز به ابیات
+  footer: نوشته شده تحت فریم‌وورک RoR و ‌Bootstrap UI ، توسط "پویا" ، کپی‌رایت ۲۰۱۳
+  sign_up: ثبت‌نام
 
 
   poems:
