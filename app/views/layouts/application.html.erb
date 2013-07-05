@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl" >
   <head>
+    <script language="javascript">
+        $("#blob").popover();
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,13 +94,11 @@
           <%= yield %>
       </div><!--/row-->
 
-    <div class="footer">
+    <div class="footer navbar navbar-fixed-bottom ">
       <footer>
         <p>&copy; <%= t(:footer) %> </p>
       </footer>
-    </div>
-
-    </div> <!-- /container -->
+   </div>
 
     <!-- Javascripts
     ================================================== -->

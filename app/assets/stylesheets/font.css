@@ -60,7 +60,7 @@ div.sign-up{
 
 div.form-actions2{
     height: 0px;
-    margin-right: 250px;
+    margin-left: -70px;
 }
 
 div.features {
@@ -82,5 +82,5 @@ div.footer{
         background:black;
         color:white;
         text-align:center;
-        padding-top: 32px;
+
 }

@@ -40,9 +40,8 @@
   </div>
 </div>
 
-<div class="features" id="3">
+<div class="main-unit hero-unit" id="3">
     <div class="row-fluid">
-        <% if user_signed_in? %>
         <div align="center">
           <h1>امکانات</h1>
           <ul class="unstyled">
@@ -51,19 +50,6 @@
             <li><h3><i class="icon-check icon-check-index"></i><%= t(:f3) %></h3></li>
           </ul>
         </div>
-        <% else %>
-          <div class="span7" align="center">
-            <h1>امکانات</h1>
-            <ul class="unstyled">
-              <li><h3><i class="icon-check icon-check-index"></i><%= t(:f1) %></h3></li>
-              <li><h3><i class="icon-check icon-check-index"></i><%= t(:f2) %></h3></li>
-              <li><h3><i class="icon-check icon-check-index"></i><%= t(:f3) %></h3></li>
-            </ul>
-          </div>
-      <div class="span4">
-            <%= render :partial => 'users/registrations/form' %>
-      </div>
-          <% end %>
     </div>
 </div>
 
