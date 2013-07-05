@@ -16,10 +16,10 @@ div.action_new_in_index {
 }
 
 div.poems_index_title {
-  background: black;
-  color: white;
+
   height: 100%;
   width: 100%;
+    margin-top: 50px;
 }
 
 div.detail {
@@ -83,4 +83,12 @@ div.footer{
         color:white;
         text-align:center;
 
+}
+
+h2.header2
+{
+    padding: 0.3em 0; border-bottom: 0px solid; overflow: hidden; zoom: 1;
+}
+p.header3{
+    float: left; margin: 0px; padding: 0px;
 }
