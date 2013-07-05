@@ -71,13 +71,12 @@
               <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t(:votes_submited) %>: <%= current_user.votes.count%>
               </a> </li>
           <% else %>
-              <li> <a class="brn" href="#3"><%= t(:sign_up) %>
-                <i class="icon-lock"></i>
-              </a> </li>
+              <li> <%= link_to t(:sign_in_html) , new_user_session_path , class:"brn" %>
+              </li>
 
-              <li> <a class="brn" href="#3"><%= t(:sign_up) %>
-                <i class="icon-lock"></i>
-              </a> </li>
+              <li> <%= link_to t(:sign_up_html) , new_user_registration_path , class:"brn" %>
+
+               </li>
 
           <% end %>
         </ul>
