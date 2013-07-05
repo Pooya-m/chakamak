@@ -33,11 +33,20 @@ p.simple{
     text-align: center;
 }
 div.detail_first {
-    margin-top: -28px;
+    margin-top: -19px;
+    text-align: center;
+    margin-bottom: 33px;
 }
 img.money{
     margin-top: 12px;
 }
 h2.simple {
     margin-top: -51px;
+}
+
+div.main-unit{
+    background: black;
+    color: white;
+    margin-right:-87px;
+    margin-left:-87px;
 }

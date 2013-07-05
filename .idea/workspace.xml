@@ -10,7 +10,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/fa.yml" afterPath="$PROJECT_DIR$/config/locales/fa.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/font.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/font.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jamemey.iml" afterPath="$PROJECT_DIR$/.idea/jamemey.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" />
     </list>
     <ignored path="jamemey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,15 +25,15 @@
     <file path="/poem.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372867065306" ignored="false" />
     <file path="/poems_controller.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372874167104" ignored="false" />
     <file path="/_form.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372847023528" ignored="false" />
-    <file path="/new.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372847071535" ignored="false" />
+    <file path="/new.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1373017429255" ignored="false" />
     <file path="/edit.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372847080096" ignored="false" />
     <file path="/show.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372848519395" ignored="false" />
     <file path="/votes_controller.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372874871408" ignored="false" />
     <file path="/welcome_controller.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372874158014" ignored="false" />
     <file path="/user_show.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372872682383" ignored="false" />
-    <file path="/application.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1373015692683" ignored="false" />
-    <file path="/fa.yml" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1373015271345" ignored="false" />
-    <file path="/font.css" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1373013931996" ignored="false" />
+    <file path="/application.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1373016844166" ignored="false" />
+    <file path="/fa.yml" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1373016270031" ignored="false" />
+    <file path="/font.css" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1373016768850" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +53,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="53" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.29220778">
+            <state line="51" column="0" selection-start="1368" selection-end="1368" vertical-scroll-proportion="-10.244898">
               <folding>
                 <element signature="n#t(:heading)#0;n#!!top" expanded="true" />
                 <element signature="n#t(:description)#0;n#!!top" expanded="true" />
@@ -75,10 +76,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/registrations/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="font.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/font.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="2" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
+            <state line="50" column="22" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fa.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/locales/fa.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="19" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,26 +108,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fa.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/locales/fa.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="43" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/poems/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="50" selection-start="723" selection-end="723" vertical-scroll-proportion="-5.0">
-              <folding>
-                <element signature="e#706#723#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -135,8 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/poems/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/poems/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/poems/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/poems/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/poem.rb" />
@@ -148,9 +145,11 @@
         <option value="$PROJECT_DIR$/app/controllers/poems_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/votes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/font.css" />
         <option value="$PROJECT_DIR$/config/locales/fa.yml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/font.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" />
       </list>
     </option>
   </component>
@@ -468,11 +467,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="1" class="java.lang.String" itemvalue="Rails.Production: jamemey" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Development: jamemey" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="0" class="java.lang.String" itemvalue="Rails.Production: jamemey" />
+      <item index="1" class="java.lang.String" itemvalue="Rails.Development: jamemey" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -591,16 +590,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/poems/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="55" selection-end="55" vertical-scroll-proportion="0.074074075" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/poems/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/poem.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="17" selection-start="158" selection-end="158" vertical-scroll-proportion="0.2948403" />
@@ -660,37 +649,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/poems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="50" selection-start="723" selection-end="723" vertical-scroll-proportion="-5.0">
+        <state line="19" column="50" selection-start="723" selection-end="723" vertical-scroll-proportion="0.43057996">
           <folding>
             <element signature="e#706#723#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/fa.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="43" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/poems/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/font.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="2" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="53" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.29220778">
+        <state line="40" column="2" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.38047138">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1368" selection-end="1368" vertical-scroll-proportion="-10.244898">
           <folding>
             <element signature="n#t(:heading)#0;n#!!top" expanded="true" />
             <element signature="n#t(:description)#0;n#!!top" expanded="true" />
@@ -706,6 +681,34 @@
             <element signature="n#t(:open_desc)#0;n#!!top" expanded="true" />
             <element signature="n#t(:open_desc_html)#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/poems/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/fa.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/font.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="22" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/registrations/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
