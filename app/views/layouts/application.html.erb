@@ -36,10 +36,46 @@
   </head>
   <body>
 
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+
+      <div class="nav-collapse collapse navbar-inverse-collapse">
+        <ul class="nav">
+          <% if user_signed_in? %>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= current_user.user_name%>
+                  <i class="icon-user"></i>
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <%= link_to t(:profile) , user_show_path(current_user) %>
+                  </li>
+                  <li>
+                    <%= link_to t(:edit_profile), edit_user_registration_path %>
+
+                  </li>
+                  <li>
+                    <%= link_to t(:sign_out) , destroy_user_session_path , method: :delete %>
+                  </li>
+                  <li>
+                    <a href="#"> ثبت بیت جدید</a>
+                  </li>
+                  <li>
+                    <a href="#"> مدیریت بیت‌های خود</a>
+                  </li>
+                </ul>
+              </li>
+          <% else %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 
 
-    <div class="container-fluid">
+  <div class="container-fluid">
       <div class="row-fluid">
           <%= bootstrap_flash %>
           <%= yield %>

@@ -7,6 +7,6 @@ class Poem < ActiveRecord::Base
   validates_presence_of :poet_name
   validates_length_of :content, maximum: 80
 
-  has_many :votes
+  has_many :votes , dependent: :destroy
 
 end

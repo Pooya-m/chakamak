@@ -3,7 +3,7 @@ Jamemey::Application.routes.draw do
   devise_for :users
 
   get "welcome/index"
-  match "users/:id" => "welcome#user_show" , via: [:get]
+  match "users/:id" => "welcome#user_show" , via: [:get] , :as => :user_show
   match "poems/:id/upvote" => "votes#create" , via: [:post ] , :as => :upvote
   match "poems/:id/unvote" => "votes#destroy" , via: [:post ] , :as => :unvote
 

@@ -1,17 +1,24 @@
-<h2>Sign inn</h2>
+<h2> Sign in </h2>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name , html: { class: "form-signin"})) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
-
+<div class="form-inputs"
+  <%= f.input :email, :autofocus => true %>
+  <%= f.input :password %>
   <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
+    <%= f.input :remember_me %>
+  <% end %>
+</div>
 
-  <div><%= f.submit "Sign in" %></div>
+    <div class="form-actions">
+  <%= f.submit "Sign in" , class: "btn btn-primary"%>
+      <%= render "users/shared/links" %>
+                              </div>
 <% end %>
 
-<%= render "users/shared/links" %>
+
+
+
+
+
+
