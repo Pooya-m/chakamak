@@ -4,7 +4,6 @@ source 'http://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -43,6 +42,8 @@ gem "devise-i18n"
 gem "rails-i18n"
 gem "font-awesome-rails", '~> 3.2.1.1'
 gem 'jquery-turbolinks'
+
+gem 'pg'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
