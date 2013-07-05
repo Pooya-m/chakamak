@@ -1,0 +1,10 @@
+<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name , html: { class: "form-signin form-horizontal "})) do |f| %>
+  <%= f.input :email, :autofocus => true %>
+  <%= f.input :password %>
+  <% if devise_mapping.rememberable? -%>
+    <%= f.input :remember_me %>
+  <% end -%>
+
+  <%= f.submit "Sign in" %>
+<% end %>
+

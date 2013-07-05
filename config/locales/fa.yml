@@ -15,6 +15,9 @@ fa:
   open_desc_html: <a class="btn btn-success" href="https://github.com/Pooya-m/jamemey">
                                      <i class="icon-github"></i> دانلود از گیت‌هاب
                                      </a>
+  f1: مرور ابیات مرتب شده برحسب امتیاز کاربران
+  f2: امکان امتیازدادن به ابیات برای کاربران ثبت‌نام شده
+  f3: امکان به اشتراک‌گذاری بیت جدید برای کاربران ثبت‌نام شده
 
 
   poems:
@@ -34,8 +37,14 @@ fa:
 
   activerecord:
     models:
-      poem: 
+      poem:
+      user:
     attributes:
       poem:
         content: "محتوا"
         poet_name: شاعر
+      user:
+        password: رمز عبور
+        email: ایمیل
+        password_confirmation: تایید رمز عبور
+        user_name: نام کاربری

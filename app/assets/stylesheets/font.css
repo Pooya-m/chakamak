@@ -50,3 +50,26 @@ div.main-unit{
     margin-right:-87px;
     margin-left:-87px;
 }
+
+div.sign-up{
+    background: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+div.form-actions2{
+    height: 0px;
+    margin-right: 250px;
+}
+
+div.features {
+    background: black;
+    color: white;
+}
+i.icon-check-index{
+    color:red;
+}
+ul.nav-index{
+    color:white;
+}
