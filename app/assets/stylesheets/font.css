@@ -18,5 +18,26 @@ div.action_new_in_index {
 div.poems_index_title {
   background: black;
   color: white;
-  height: relative;
+  height: 100%;
+  width: 100%;
+}
+
+div.detail {
+    text-align: center;
+}
+
+p.free {
+    text-align: center;
+}
+p.simple{
+    text-align: center;
+}
+div.detail_first {
+    margin-top: -28px;
+}
+img.money{
+    margin-top: 12px;
+}
+h2.simple {
+    margin-top: -51px;
 }
