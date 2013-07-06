@@ -93,3 +93,11 @@ p.header3{
     float: left; margin: 0px; padding: 0px;
     overflow:hidden;
 }
+
+li.user-profile-poems{
+ white-space: pre;
+}
+
+div.profile-show-poems{
+    text-align:center;
+}

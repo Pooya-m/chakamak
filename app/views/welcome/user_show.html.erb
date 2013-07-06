@@ -1,58 +1,78 @@
+<br> <br> <Br>
 <p>
-<h1> List of <%= @user.user_name%> Poems!</h1>
-<table>
-  <tr>
-    <th>poet_name</th>
-    <th>content</th>
-  </tr>
+<div class="profile-show-poems">
 
+  <h1>لیست اشعار ثبت شده</h1>
+  <br>
   <% @poems.each do |p| %>
-      <tr>
-        <td><%= p.poet_name %></td>
-        <td><%= p.content %></td>
-        <% if user_signed_in? %>
+      <ul class="inline">
+        <li class="user-profile-poems"> <%= p.content %> </li>
+        <li>
+          <small> <%= p.poet_name %> </small>
+        </li>
+        <li></li>
+        <li>
+          <small>
+            <%= link_to t(:show_html), p, title: t(:show_poem) %>
+          </small>
+        </li>
+        <li>
+          <small>
             <% if Vote.exists?(poem_id: p.id, user_id: current_user.id) %>
-                <td> <%= link_to "Unvote" , unvote_path(p.id), method: :post %> </td>
+                <%= link_to t(:minus_html), unvote_path(p.id), method: :post, title: t(:minus) %>
             <% else %>
-                <td> <%= link_to "Upvote", upvote_path(p.id), method: :post %> </td>
+                <%= link_to t(:plus_html), upvote_path(p.id), method: :post, title: t(:plus) %>
             <% end %>
-        <% else %>
-        <% end %>
-        <td><%= link_to "Show", p %></td>
-        <% if user_signed_in? and p.user_id == current_user.id %>
-            <td><%= link_to "Delete", poem_path(p), method: :delete %></td>
-        <% end %>
-      </tr>
+          </small>
+        </li>
+        <li>
+          <small>
+            <% if user_signed_in? and p.user_id == current_user.id %>
+                <td><%= link_to t(:delete_html), poem_path(p), method: :delete, title: t(:delete_poem) %></td>
+            <% end %>
+          </small>
+        </li>
+      </ul>
   <% end %>
-</table>
+</div>
+
 </p>
 <br> <br>
 
 <p>
-<h1> List of <%= @user.user_name%> Upvotes!</h1>
-<table>
-  <tr>
-    <th>poet_name</th>
-    <th>content</th>
-  </tr>
 
+<div class="profile-show-poems">
+  <h1> ابیات امتیاز داده شده</h1>
+  <br> <br>
   <% @upvotes.each do |u| %>
-      <tr>
-        <td><%= u.poem.poet_name %></td>
-        <td><%= u.poem.content %></td>
-        <% if user_signed_in? %>
+      <ul class="inline">
+        <li class="user-profile-poems"> <%= u.poem.content %> </li>
+        <li>
+          <small> <%= u.poem.poet_name %> </small>
+        </li>
+        <li></li>
+        <li>
+          <small>
+            <%= link_to t(:show_html), p, title: t(:show_poem) %>
+          </small>
+        </li>
+        <li>
+          <small>
             <% if Vote.exists?(poem_id: u.poem.id, user_id: current_user.id) %>
-                <td> <%= link_to "Unvote" , unvote_path(u.poem.id), method: :post %> </td>
+                <%= link_to t(:minus_html), unvote_path(u.poem.id), method: :post, title: t(:minus) %>
             <% else %>
-                <td> <%= link_to "Upvote", upvote_path(u.poem.id), method: :post %> </td>
+                <%= link_to t(:plus_html), upvote_path(u.poem.id), method: :post, title: t(:plus) %>
             <% end %>
-        <% else %>
-        <% end %>
-        <td><%= link_to "Show", u.poem %></td>
-        <% if user_signed_in? and u.user_id == current_user.id %>
-            <td><%= link_to "Delete", poem_path(u.poem), method: :delete %></td>
-        <% end %>
-      </tr>
+          </small>
+        </li>
+        <li>
+          <small>
+            <% if user_signed_in? and u.user_id == current_user.id %>
+                <td><%= link_to t(:delete_html), poem_path(u.poem), method: :delete, title: t(:delete_poem) %></td>
+            <% end %>
+          </small>
+        </li>
+      </ul>
   <% end %>
-</table>
+</div>
 </p>
