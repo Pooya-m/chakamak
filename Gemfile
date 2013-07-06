@@ -44,6 +44,7 @@ gem "font-awesome-rails", '~> 3.2.1.1'
 gem 'jquery-turbolinks'
 
 gem 'pg'
+gem 'rails_12factor'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
