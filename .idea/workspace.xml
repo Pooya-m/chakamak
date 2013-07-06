@@ -7,12 +7,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/.poem.rb.swp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/welcome/.index.html.erb.swp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/config/locales/.fa.yml.swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/sessions/.new.html.erb.swp" afterPath="$PROJECT_DIR$/app/views/users/sessions/.new.html.erb.swp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/fa.yml" afterPath="$PROJECT_DIR$/config/locales/fa.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/font.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/font.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jamemey.iml" afterPath="$PROJECT_DIR$/.idea/jamemey.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/user_show.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/user_show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jamemey.iws" />
@@ -55,10 +49,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user_show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user_show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/user_show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="11" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.26948053">
+            <state line="45" column="11" selection-start="1203" selection-end="1203" vertical-scroll-proportion="-25.666666">
               <folding>
                 <element signature="e#352#365#0" expanded="true" />
                 <element signature="e#377#390#0" expanded="true" />
@@ -81,10 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="font.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="font.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/font.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="12" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.0">
+            <state line="98" column="9" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.770291">
               <folding />
             </state>
           </provider>
@@ -681,16 +675,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/font.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="12" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/user_show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="11" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.26948053">
+        <state line="45" column="11" selection-start="1203" selection-end="1203" vertical-scroll-proportion="-25.666666">
           <folding>
             <element signature="e#352#365#0" expanded="true" />
             <element signature="e#377#390#0" expanded="true" />
@@ -709,6 +696,13 @@
             <element signature="e#2079#2094#0" expanded="true" />
             <element signature="e#2139#2154#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/font.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="9" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.770291">
+          <folding />
         </state>
       </provider>
     </entry>
