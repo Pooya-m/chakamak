@@ -7,11 +7,12 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/.poem.rb.swp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/welcome/.index.html.erb.swp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/config/locales/.fa.yml.swp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
     </list>
     <ignored path="jamemey.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372844147411" ignored="false" />
-    <file path="/index.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1373042855028" ignored="false" />
+    <file path="/index.html.erb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1373109434782" ignored="false" />
     <file path="/routes.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1373025558913" ignored="false" />
     <file path="/application_controller.rb" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1372874576785" ignored="false" />
     <file path="/Dummy.txt" changelist="c6f200fe-ad68-47fc-b5e7-c56d5f5e0cfd" time="1373099789964" ignored="false" />
@@ -48,6 +49,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="29" selection-start="971" selection-end="971" vertical-scroll-proportion="0.7087542">
+              <folding>
+                <element signature="n#t(:more)#0;n#!!top" expanded="true" />
+                <element signature="n#t(:free)#0;n#!!top" expanded="true" />
+                <element signature="n#t(:simple)#0;n#!!top" expanded="true" />
+                <element signature="n#t(:open)#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="user_show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/user_show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,10 +89,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="font.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="font.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/font.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="9" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.770291">
+            <state line="90" column="9" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,12 +157,12 @@
         <option value="$PROJECT_DIR$/app/views/users/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/registrations/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/poems_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/poems/index.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/fa.yml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/font.css" />
         <option value="$PROJECT_DIR$/app/views/welcome/user_show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
       </list>
     </option>
   </component>
@@ -593,13 +617,6 @@
         <state line="7" column="6" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/votes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="7" selection-start="435" selection-end="435" vertical-scroll-proportion="0.39050537" />
@@ -630,13 +647,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/poems/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="327" selection-end="327" vertical-scroll-proportion="0.024350649">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/poems_controller.rb">
@@ -700,8 +710,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/font.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="9" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.770291">
+        <state line="90" column="9" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="29" selection-start="971" selection-end="971" vertical-scroll-proportion="0.7087542">
+          <folding>
+            <element signature="n#t(:more)#0;n#!!top" expanded="true" />
+            <element signature="n#t(:free)#0;n#!!top" expanded="true" />
+            <element signature="n#t(:simple)#0;n#!!top" expanded="true" />
+            <element signature="n#t(:open)#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
