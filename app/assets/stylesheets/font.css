@@ -103,3 +103,7 @@ li.user-profile-poems{
 div.profile-show-poems{
     text-align:center;
 }
+
+dl.show-poems {
+    white-space: pre;
+}

@@ -3,7 +3,7 @@
   <%= f.input :content %>
   <%= f.input :poet_name %>
   <div class="form-actions">
-    <%= f.button :submit, :class => 'btn-primary' , value: t('.poem_new') %>
+    <%= f.button :submit, :class => 'btn-primary' , value: t(:submit) %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                 poems_path, :class => 'btn' %>
   </div>

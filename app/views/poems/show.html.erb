@@ -1,27 +1,22 @@
-<%- model_class = Poem -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
-</div>
+<h1> <%= t(:show_poem) %></h1>
+<Br>
+<ul class="inline">
+  <li class="user-profile-poems"> <%= @poem.content %> </li>
+  <li>          <small> <%= @poem.poet_name %> </small>
+  </li>
+</ul>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:poet_id) %>:</strong></dt>
-  <dd><%= @poem.poet_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
-  <dd><%= @poem.user_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:content) %>:</strong></dt>
-  <dd><%= @poem.content %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:poet_name) %>:</strong></dt>
-  <dd><%= @poem.poet_name %></dd>
-</dl>
-
-<div class="form-actions">
-  <%= link_to t('.back', :default => t("helpers.links.back")),
-              poems_path, :class => 'btn'  %>
-  <%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_poem_path(@poem), :class => 'btn' %>
-  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-              poem_path(@poem),
-              :method => 'delete',
-              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-              :class => 'btn btn-danger' %>
-</div>
+<% if user_signed_in? %>
+    <% if @poem.user_id == current_user.id %>
+        <%= link_to t(:edit, :default => t("helpers.links.edit")),
+                    edit_poem_path(@poem), :class => 'btn' %>
+        <%= link_to t(:destroy, :default => t("helpers.links.destroy")),
+                    poem_path(@poem),
+                    :method => 'delete',
+                    :data => { :confirm => t(:sure, :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                    :class => 'btn btn-danger' %>
+    <% else %>
+    <% end %>
+<% end %>
+<%= link_to t(:back, :default => t("helpers.links.back")),
+            poems_path, :class => 'btn'  %>

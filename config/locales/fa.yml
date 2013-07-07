@@ -41,7 +41,19 @@ fa:
   remember_me: مرا به یاد داشته باش
   forgot_your_password: رمز عبور خود را فراموش کرده‌اید؟
   send_me_inst: اقدام از طریق ایمیل
-
+  show_poem: نمایش بیت
+  leave_it: اگر نمی‌خواهید تغییر بدهید، خالی بگذارید.
+  we_need: برای تعییرات، رمز فعلی لازم هست.
+  update: به‌ روز رسانی
+  cancel: حذف حساب کاربری
+  unhappy: ناراضی هستید؟
+  cancel_my_account: حسابم را حذف کن
+  back: بازگشت
+  sure: آیا مطمئن هستید؟
+  edit: ویرایش
+  destroy: حذف
+  edit_poem: ویرایش بیت
+  submit: ثبت
 
   poems:
     index:
