@@ -35,6 +35,13 @@ fa:
   delete_poem: حذف بیت
   show_html: <i class="icon-eye-open"></i>
   show_poem: نمایش بیت
+  sign_in: ورود
+  sign_up: ثبت‌نام
+  forgot: فراموشی رمز عبور؟
+  remember_me: مرا به یاد داشته باش
+  forgot_your_password: رمز عبور خود را فراموش کرده‌اید؟
+  send_me_inst: اقدام از طریق ایمیل
+
 
   poems:
     index:

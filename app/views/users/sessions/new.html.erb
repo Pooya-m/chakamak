@@ -1,4 +1,4 @@
-<h2> Sign in </h2>
+<h2> <%= t(:sign_in) %> </h2>
 
 <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 
@@ -6,14 +6,15 @@
   <%= f.input :email, :autofocus => true %>
   <%= f.input :password %>
   <% if devise_mapping.rememberable? -%>
-    <%= f.input :remember_me %>
+    <%= f.input :remember_me , as: :boolean , label: t(:remember_me) %>
   <% end %>
 </div>
 
     <div class="form-actions">
-  <%= f.submit "Sign in" , class: "btn btn-primary"%>
-      <%= render "users/shared/links" %>
-                              </div>
+  <%= f.submit t(:sign_in) , class: "btn btn-primary"%>
+  <%= link_to t(:forgot) , new_user_password_path %>
+
+  </div>
 <% end %>
 
 
