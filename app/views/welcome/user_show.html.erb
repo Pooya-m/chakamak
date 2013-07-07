@@ -67,7 +67,7 @@
         </li>
         <li>
           <small>
-            <% if user_signed_in? and u.user_id == current_user.id %>
+            <% if user_signed_in? and u.poem.user_id == current_user.id %>
                 <td><%= link_to t(:delete_html), poem_path(u.poem), method: :delete, title: t(:delete_poem) %></td>
             <% end %>
           </small>
