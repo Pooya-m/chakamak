@@ -17,6 +17,7 @@
           </small>
         </li>
         <li>
+          <% if user_signed_in? %>
           <small>
             <% if Vote.exists?(poem_id: p.id, user_id: current_user.id) %>
                 <%= link_to t(:minus_html), unvote_path(p.id), method: :post, title: t(:minus) %>
@@ -24,6 +25,7 @@
                 <%= link_to t(:plus_html), upvote_path(p.id), method: :post, title: t(:plus) %>
             <% end %>
           </small>
+              <% end %>
         </li>
         <li>
           <small>
