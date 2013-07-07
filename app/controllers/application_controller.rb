@@ -14,8 +14,8 @@ class ApplicationController < ActionController::Base
   end
 
   def clear(s)
-    s.content.gsub! "\n", "            "
-    s.content.gsub! "\r", "            "
+    s.gsub! "\n", "            "
+    s.gsub! "\r", "            "
   end
 
   #def referer
