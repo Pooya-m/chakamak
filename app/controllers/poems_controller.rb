@@ -40,9 +40,7 @@ class PoemsController < ApplicationController
     @poet.save
     @poem.poet_id = @poet.id
     @poem.user_id = current_user.id
-    @poem.content.gsub! "\n", "            "
-    @poem.content.gsub! "\r", "            "
-
+    clear(@poem.content)
     if @poem.save
       redirect_to @poem
     else
@@ -57,9 +55,7 @@ class PoemsController < ApplicationController
     @poet = Poet.find_or_initialize_by_poet_name(params[:poem][:poet_name])
     @poet.save!
     @poem.poet_id = @poet.id
-    @poem.content.gsub! "\n", "            "
-    @poem.content.gsub! "\r", "            "
-
+    clear(@poem.content)
     if @poem.update(params[:poem].permit(:poet_name, :content))
       redirect_to @poem
     else
