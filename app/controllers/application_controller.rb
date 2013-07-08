@@ -14,6 +14,7 @@ class ApplicationController < ActionController::Base
   end
 
   def clear(s)
+    s.squeeze!(" ")
     s.gsub! "\n", "            "
     s.gsub! "\r", "            "
   end

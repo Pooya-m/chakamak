@@ -103,10 +103,30 @@ li.user-profile-poems{
 }
 
 div.profile-show-poems{
-    text-align:center;
+  text-align:center;
+  padding-bottom: 10px;
 }
 
 dl.show-poems {
     white-space: pre;
 }
+div.inline{
+    float:right;
+    padding-right:150px;
+}
+div.m3 {
+    padding-right:40px;
+}
+
+form.special-form{
+    margin-top:300px;
+}
+
+small.inline-icon{
+    padding-right:10px;
+}
+div.m4{
+    padding-right: 40px;
+}
+
 

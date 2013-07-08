@@ -58,6 +58,7 @@ fa:
   poems:
     index:
       title: "اشعار"
+      titl2: لیست اشعار ثبت شده
       actions: "عملیات‌ها"
       new: "بیت جدید"
       upvote_html: "<i class='icon-plus'></i>"
