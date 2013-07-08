@@ -67,9 +67,7 @@
               </a> </li>
               <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t(:votes_submited) %>: <%= current_user.votes.count%>
               </a> </li>
-              <li>
-                <%= link_to t(:list_html) , poems_path %>
-              </li>
+
           <% else %>
               <li> <%= link_to t(:sign_in_html) , new_user_session_path , class:"brn" %>
               </li>
@@ -79,6 +77,9 @@
                </li>
 
           <% end %>
+          <li>
+            <%= link_to t(:list_html) , poems_path %>
+          </li>
         </ul>
       </div>
           </div>
