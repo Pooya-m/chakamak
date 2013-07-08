@@ -1,0 +1,47 @@
+<p>
+<div>
+  <div class="m1 inline">
+    <% @poems.each do |p| %>
+        <%= p.content.split(/ {2,}/)[0] %>
+        <br>
+    <% end %>
+  </div>
+  <div class="m2 inline">
+    <% @poems.each do |p| %>
+        <%= p.content.split(/ {2,}/)[1] %>
+        <br>
+    <% end %>
+  </div>
+  <div class="m3 inline inline-icon">
+    <% @poems.each do |p| %>
+        <small><%= p.poet_name %> </small>
+        <br>
+    <% end %>
+  </div>
+
+  <div class="m4 inline inline-icon">
+    <% @poems.each do |p| %>
+        <small>
+          <%= link_to t(:show_html), p, title: t(:show_poem) %>
+        </small>
+        <% if user_signed_in? %>
+            <small>
+              <% if Vote.exists?(poem_id: p.id, user_id: current_user.id) %>
+                  <%= link_to t(:minus_html), unvote_path(p.id), method: :post, title: t(:minus) %>
+              <% else %>
+                  <%= link_to t(:plus_html), upvote_path(p.id), method: :post, title: t(:plus) %>
+              <% end %>
+            </small>
+            <small>
+              <% if p.user_id == current_user.id %>
+                  <%= link_to t(:delete_html), poem_path(p), method: :delete, title: t(:delete_poem) %>
+              <% end %>
+            </small>
+
+        <% end %>
+
+        <br>
+    <% end %>
+  </div>
+</div>
+</p>

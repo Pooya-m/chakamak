@@ -70,6 +70,10 @@ fa:
     form:
       poem_new: "ثبت بیت جدید"
       cancel: "انصراف"
+  welcome:
+    user_show:
+      title: اشعار ثبت کرده
+      title2: ابیات امتیاز داده شده
 
   activerecord:
     models:
