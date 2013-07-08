@@ -54,6 +54,7 @@ fa:
   destroy: حذف
   edit_poem: ویرایش بیت
   submit: ثبت
+  list_html:  <i class="icon-list"></i>لیست ابیات
 
   poems:
     index:
