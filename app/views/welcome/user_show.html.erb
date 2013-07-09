@@ -1,11 +1,11 @@
 <div class="profile_statistic">
   <ul class="unstyled">
-  <small>
-  <li><%= t(:username)%> : <%= @user.user_name %> </li>
-  <li><%= t(:poems_submited) %> : <%= @user.poems.count %></li>
-  <li><%= t(:votes_submited) %> : <%= @user.votes.count %></li>
-  <li><%= t(:user_score2) %> : <%= user_score(@user) %></li>
-  </small>
+    <small>
+      <li><%= t(:username) %> : <%= @user.user_name %> </li>
+      <li><%= t(:poems_submited) %> : <%= @user.poems.count %></li>
+      <li><%= t(:votes_submited) %> : <%= @user.votes.count %></li>
+      <li><%= t(:user_score2) %> : <%= user_score(@user) %></li>
+    </small>
   </ul>
 </div>
 
@@ -45,15 +45,16 @@
 
         <%= link_to t(:show_html), p.poem, title: t(:show_poem) %>
         <% if user_signed_in? %>
-
-              <% if Vote.exists?(poem_id: p.poem.id, user_id: current_user.id) %>
-                  <%= link_to t(:minus_html), unvote_path(p.poem.id), method: :post, title: t(:minus) %>
-              <% else %>
-                  <%= link_to t(:plus_html), upvote_path(p.poem.id), method: :post, title: t(:plus) %>
-              <% end %>
-              <% if p.poem.user_id == current_user.id %>
-                  <%= link_to t(:delete_html), poem_path(p.poem), method: :delete, title: t(:delete_poem) %>
-              <% end %>
+            <% if current_user.id != p.poem.user_id %>
+                <% if Vote.exists?(poem_id: p.poem.id, user_id: current_user.id) %>
+                    <%= link_to t(:minus_html), unvote_path(p.poem.id), method: :post, title: t(:minus) %>
+                <% else %>
+                    <%= link_to t(:plus_html), upvote_path(p.poem.id), method: :post, title: t(:plus) %>
+                <% end %>
+            <% end %>
+            <% if p.poem.user_id == current_user.id %>
+                <%= link_to t(:delete_html), poem_path(p.poem), method: :delete, title: t(:delete_poem) %>
+            <% end %>
         <% end %>
 
         <br>

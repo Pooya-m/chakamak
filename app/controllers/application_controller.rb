@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
 
   def check_limit
     poems = current_user.poems :condition => ["DATE(created_at) = DATA(?)" , Time.now]
-    if poems.count >= 20
+    if poems.count >= 30
           redirect_to poems_path , alert: t(:poem_limit)
     end
 
