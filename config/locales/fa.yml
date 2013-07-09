@@ -58,6 +58,8 @@ fa:
   user_score: امتیاز شما
   user_score2: امتیاز کاربر
   username: نام کاربری
+  poem_limit: شما در هر روز حداکثر می‌توانید ۲۰ بیت ثبت کنید.
+
 
   poems:
     index:
@@ -74,10 +76,12 @@ fa:
     form:
       poem_new: "ثبت بیت جدید"
       cancel: "انصراف"
+    check_limit:
   welcome:
     user_show:
       title: اشعار ثبت کرده
       title2: ابیات امتیاز داده شده
+
 
   activerecord:
     models:

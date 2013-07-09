@@ -12,4 +12,6 @@ class User < ActiveRecord::Base
 
   has_many :poems
   has_many :votes
+
+  attr_accessor :limited
 end

@@ -1,7 +1,7 @@
 class PoemsController < ApplicationController
 
   before_filter :authenticate_user! , except: [:index , :show]
-
+  before_filter :check_limit , only: [:new , :create]
   def show
     @poem = Poem.find(params[:id])
   end
@@ -62,5 +62,9 @@ class PoemsController < ApplicationController
     end
 
   end
+
+
+
+
 
 end
