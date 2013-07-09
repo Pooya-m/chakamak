@@ -105,7 +105,7 @@ li.user-profile-poems{
 div.profile-show-poems{
   text-align:center;
   padding-bottom: 10px;
-  padding-top: 18px;
+  padding-top: 45px;
 }
 
 dl.show-poems {
@@ -131,6 +131,10 @@ div.m4{
 }
 body#poems-index {
     overflow-x: visible;
+}
+
+div.profile_statistic {
+    padding-top: 15px;
 }
 
 

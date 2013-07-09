@@ -61,13 +61,15 @@
                   <li>
                     <%= link_to t(:poems_new) , new_poem_path %>
                   </li>
+
                 </ul>
               </li>
               <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t(:poems_submited) %>: <%= current_user.poems.count%>
               </a> </li>
               <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t(:votes_submited) %>: <%= current_user.votes.count%>
               </a> </li>
-
+              <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t(:user_score) %>: <%= user_score(current_user) %>
+              </a> </li>
           <% else %>
               <li> <%= link_to t(:sign_in_html) , new_user_session_path , class:"brn" %>
               </li>
