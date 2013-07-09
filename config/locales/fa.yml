@@ -59,7 +59,11 @@ fa:
   user_score2: امتیاز کاربر
   username: نام کاربری
   poem_limit: شما در هر روز حداکثر می‌توانید ۲۰ بیت ثبت کنید.
-
+  lastest: آخرین ابیات ثبت شده
+  list: لیست ابیات
+  poems_list: آخرین ابیات
+  poems_list_by_vote: براساس امتیاز
+  lastest_by_vote: لیست ابیات بر حسب امتیاز
 
   poems:
     index:

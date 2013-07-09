@@ -1,6 +1,10 @@
 <body id="poems-index">
 <div class="profile-show-poems">
-  <h1><%= t('.titl2') %> </h1>
+  <% if @vote %>
+      <h1><%= t(:lastest_by_vote) %> </h1>
+  <% else %>
+      <h1><%= t(:lastest) %> </h1>
+  <% end %>
 </div>
 
 <%= render :partial => 'welcome/show' %>
