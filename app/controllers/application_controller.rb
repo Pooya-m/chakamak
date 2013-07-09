@@ -22,6 +22,14 @@ class ApplicationController < ActionController::Base
     s.gsub! "\r", "            "
   end
 
+  def user_score(user)
+    score = 0
+    user.poems.each do |p|
+      score += p.votes.count
+    end
+    score
+  end
+
   #def referer
   #  session[:return_to] ||= request.referer
   #end

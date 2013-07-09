@@ -1,15 +1,16 @@
+
+
 <div class="profile-show-poems">
   <h1><%= t('.title') %> </h1>
 </div>
 
 <%= render :partial => 'show' %>
-
 </div>
 <div class="profile-show-poems">
   <h1><%= t('.title2') %> </h1>
 </div>
 
-<div>
+<div class="down">
   <div class="m1 inline">
     <% @upvotes.each do |p| %>
         <%= p.poem.content.split(/ {2,}/)[0] %>
@@ -54,4 +55,8 @@
         <br>
     <% end %>
   </div>
+
 </div>
+</div>
+<br> <br> <br>
+
