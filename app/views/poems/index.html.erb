@@ -7,8 +7,8 @@
 
 
 <br> <br>   <br> <br>
-  <% po = current_user.poems :condition => ["DATE(created_at) = DATA(?)" , Time.now] %>
-<% if user_signed_in? and po.count < 20 %>
+
+<% if user_signed_in? and @po.count < 20 %>
     <div class="new_in_index">
       <%= simple_form_for Poem.new, :html => {:class => 'form-horizontal special-form'} do |f| %>
           <%= f.input :content %>

@@ -15,6 +15,9 @@ class PoemsController < ApplicationController
   end
 
   def index
+    if user_signed_in?
+      @po = current_user.poems :condition => ["DATE(created_at) = DATA(?)" , Time.now]
+    end
     @poems = Poem.all
     @poems.sort! { |a,b| a.votes.count <=> b.votes.count }
     @poems.reverse! 
