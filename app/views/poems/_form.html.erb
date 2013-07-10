@@ -1,6 +1,6 @@
 
 <%= simple_form_for @poem, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :content %>
+  <%= f.input :content , placeholder: "برای شروع مصرع دوم از اینتر استفاده کنید."%>
   <%= f.input :poet_name %>
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' , value: t(:submit) %>

@@ -17,6 +17,7 @@ margin: 0px auto 0px auto
 }
 
 div.action_new_in_index {
+    margin-bottom: 70px;
 }
 
 div.poems_index_title {
@@ -120,7 +121,7 @@ div.m3 {
 }
 
 form.special-form{
-    margin-top:300px;
+    margin-top:150px;
 }
 
 small.inline-icon{

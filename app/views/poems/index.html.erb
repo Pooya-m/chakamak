@@ -15,8 +15,8 @@
 <% if user_signed_in? and @po.count < 30 %>
     <div class="new_in_index">
       <%= simple_form_for Poem.new, :html => {:class => 'form-horizontal special-form'} do |f| %>
-          <%= f.input :content %>
-          <%= f.input :poet_name %>
+          <%= f.input :content , placeholder: "برای شروع مصرع دوم از اینتر استفاده کنید."%>
+          <%= f.input :poet_name%>
           <div class="form-actions action_new_in_index">
             <%= f.button :submit, :class => 'btn-primary', value: t('.poem_new') %>
           </div>
