@@ -147,5 +147,29 @@ div.faq{
     font-size:17px;
 }
 
+body.signup{
+background: url("http://s3.picofile.com/file/7840086341/IMG_3887.jpg") no-repeat fixed center center / cover  transparent;
 
+}
 
+h2.signup{
+    color:white;
+}
+
+form.my_form {
+    padding-top:60px;
+}
+
+div.my_action {
+    padding-right:200px;
+    color:black;
+}
+
+form.my_form2{
+    padding-right:150px;
+    padding-top:150px;
+}
+
+a.salam {
+    color:black;
+}
