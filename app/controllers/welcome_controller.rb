@@ -7,5 +7,8 @@ class WelcomeController < ApplicationController
     @poems = @user.poems
     @upvotes = @user.votes
   end
+
+  def faq
+  end
 end
 

@@ -1,6 +1,10 @@
 class VotesController < ApplicationController
 
   def create
+    if current_user.id == Poem.find(params[:id]).user_id
+      redirect_to poems_path, alert: "You can't vote to yourself"
+    end
+
     @vote = Vote.new(user_id: current_user.id, poem_id: params[:id])
     if @vote.save!
       p session[:return_to]
