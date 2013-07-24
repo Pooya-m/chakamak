@@ -16,8 +16,8 @@ class PoemsController < ApplicationController
 
   def index
 
-    if user_signed_in?
-      @po = current_user.poems :condition => ["DATE(created_at) = DATA(?)" , Time.now]
+    if user_signed_in?  
+      @po = current_user.poems.where('DATE(created_at) = ?', Time.now.utc.to_date)
     end
     @poems = Poem.all
     @vote = false
