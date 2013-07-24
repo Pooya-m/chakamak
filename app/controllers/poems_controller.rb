@@ -29,8 +29,6 @@ class PoemsController < ApplicationController
     else
       @poems.sort!.reverse!
     end
-
-
   end
 
   def destroy
@@ -68,7 +66,8 @@ class PoemsController < ApplicationController
     @poet.save!
     @poem.poet_id = @poet.id
     clear(@poem.content)
-    if @poem.update(params[:poem].permit(:poet_name, :content))
+    #if @poem.update(params[:poem].permit(:poet_name).merge({"content" => @poem.content}))
+    if @poem.update(poet_name: params[:poem][:poet_name] , content: @poem.content)
       redirect_to @poem
     else
       render 'edit'

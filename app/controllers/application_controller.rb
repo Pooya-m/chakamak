@@ -20,6 +20,7 @@ class ApplicationController < ActionController::Base
     end
     s.gsub! "\n", "            "
     s.gsub! "\r", "            "
+    p s.split(/ {2,}/)
   end
 
   def user_score(user)
