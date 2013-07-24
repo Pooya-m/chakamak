@@ -15,12 +15,11 @@ class ApplicationController < ActionController::Base
 
   def clear(s)
     s.squeeze!(" ")
-    p s.squeeze(" ")
+    s.gsub! "\r",""
     if !s.include? "\n" and !s.include? "\r"
       s[(s.length / 2).floor] = s[(s.length / 2).floor] + "\n"
     end
     s.gsub! "\n", "            "
-    s.gsub! "\r", "            "
     s
   end
 

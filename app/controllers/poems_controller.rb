@@ -51,7 +51,7 @@ class PoemsController < ApplicationController
     @poet.save!
   
     @poem = Poem.new(poet_name: params[:poem][:poet_name] , content: clear(params[:poem][:content]), poet_id: @poet.id , user_id: current_user.id)
-
+    
     if @poem.save
       redirect_to @poem
     else
