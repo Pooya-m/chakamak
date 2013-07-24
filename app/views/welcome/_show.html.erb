@@ -33,11 +33,6 @@
               <% end %>
               <% end %>
 
-              <% if p.user_id == current_user.id %>
-                  <%= link_to t(:delete_html), poem_path(p), method: :delete, title: t(:delete_poem) %>
-              <% end %>
-
-
         <% end %>
 
         <br>
