@@ -46,7 +46,6 @@ class PoemsController < ApplicationController
   end
 
   def create
-
     @poet = Poet.find_or_initialize_by_poet_name(params[:poem][:poet_name])
     @poet.save!
   

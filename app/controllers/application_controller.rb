@@ -14,6 +14,7 @@ class ApplicationController < ActionController::Base
   end
 
   def clear(s)
+    s.strip!
     s.squeeze!(" ")
     s.gsub! "\r",""
     if !s.include? "\n" and !s.include? "\r"
