@@ -1,3 +1,5 @@
+ # -*- coding: utf-8 -*-
+
 class ApplicationController < ActionController::Base
 
   before_filter :configure_permitted_parameters, if: :devise_controller?
@@ -48,8 +50,8 @@ class ApplicationController < ActionController::Base
     poems_path
   end
 
-  #def referer
-  #  session[:return_to] ||= request.referer
-  #end
+  def better(string)
+    string.gsub 'ي' , 'ی' 
+  end
 
 end

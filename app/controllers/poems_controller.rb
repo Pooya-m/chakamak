@@ -47,10 +47,10 @@ class PoemsController < ApplicationController
   end
 
   def create
-    @poet = Poet.find_or_initialize_by_poet_name(params[:poem][:poet_name])
+    @poet = Poet.find_or_initialize_by_poet_name(better(params[:poem][:poet_name]))
     @poet.save!
   
-    @poem = Poem.new(poet_name: params[:poem][:poet_name] , content: clear(params[:poem][:content]), poet_id: @poet.id , user_id: current_user.id)
+    @poem = Poem.new(poet_name: better(params[:poem][:poet_name]) , content: better(clear(params[:poem][:content])), poet_id: @poet.id , user_id: current_user.id)
     
     if @poem.save
       redirect_to @poem
@@ -62,11 +62,11 @@ class PoemsController < ApplicationController
 
   def update
 
-    @poet = Poet.find_or_initialize_by_poet_name(params[:poem][:poet_name])
+    @poet = Poet.find_or_initialize_by_poet_name(better(params[:poem][:poet_name]))
     @poet.save!
 
     @poem = current_user.poems.find(params[:id])
-    if @poem.update(poet_name: params[:poem][:poet_name] , content: clear(params[:poem][:content]) , poet_id: @poet.id)
+    if @poem.update(poet_name: better(params[:poem][:poet_name]) , content: better(clear(params[:poem][:content])) , poet_id: @poet.id)
       redirect_to @poem
     else
       render 'edit'
