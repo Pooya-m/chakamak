@@ -14,3 +14,54 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+function to_persian(s)
+{
+  var number = s.replace(/\s+/g, '').split('');
+  for(var i = 0; i < number.length ; i++)
+  {
+    switch(number[i])
+    {
+      case "0":
+        number[i] = "۰";
+        break;
+      case "1":
+        number[i] = "۱";
+        break;
+      case "2":
+        number[i] = "۲";
+        break;
+      case "3":
+        number[i] = "۳";
+        break;
+      case "4":
+        number[i] = "۴";
+        break;
+      case "5":
+        number[i] = "۵";
+        break;
+      case "6":
+        number[i] = "۶";
+        break;
+      case "7":
+        number[i] = "۷";
+        break;
+      case "8":
+        number[i] = "۸";
+        break;
+      case "9":
+        number[i] = "۹";
+        break;
+    } 
+  }
+  return number.join('');
+}
+
+document.getElementsByClassName("page current")[0].textContent = to_persian(document.getElementsByClassName("page current")[0].textContent);
+
+a = document.getElementsByClassName("page");
+for(var i = 0; i < a.length ; i++)
+{
+  if(a[i].firstElementChild)
+   a[i].firstElementChild.text = to_persian(a[i].firstElementChild.text);
+}
+

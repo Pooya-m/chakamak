@@ -100,3 +100,11 @@ fa:
         email: ایمیل
         password_confirmation: تایید رمز عبور
         user_name: نام کاربری
+
+  views:
+    pagination:
+      previous: "| قبل |"
+      next: "| بعد |"
+      first: اولین
+      last: آخرین
+      truncate: ...

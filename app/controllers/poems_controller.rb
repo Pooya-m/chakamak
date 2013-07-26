@@ -21,7 +21,7 @@ class PoemsController < ApplicationController
       @po = current_user.poems.where('DATE(created_at) = ?', Time.now.utc.to_date)
     end
 
-    @poems = Poem.all
+    @poems = Poem.all.page(params[:page]).per(10)
     @vote = false
     
     if params[:vote] == "true"
@@ -30,6 +30,7 @@ class PoemsController < ApplicationController
     else
       @poems.sort!.reverse!
     end
+
   end
 
   def destroy
