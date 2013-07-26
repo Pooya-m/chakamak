@@ -28,7 +28,7 @@ class PoemsController < ApplicationController
       @poems.sort! { |a,b| a.votes.count <=> b.votes.count }.reverse!
       @vote = true
     else
-      @poems.sort!
+      @poems.sort!.reverse!
     end
 
   end
