@@ -18,7 +18,7 @@
 <div class="profile-show-poems">
   <h1><%= t('.title2') %> </h1>
 </div>
-
+<%= paginate @upvotes %>
 <div class="down">
   <div class="m1 inline">
     <% @upvotes.each do |p| %>

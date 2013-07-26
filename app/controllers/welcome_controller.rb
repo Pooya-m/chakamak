@@ -4,8 +4,8 @@ class WelcomeController < ApplicationController
 
   def user_show
     @user = User.find(params[:id])
-    @poems = @user.poems
-    @upvotes = @user.votes
+    @poems = @user.poems.page(params[:page]).per(15)
+    @upvotes = @user.votes.order('created_at DESC').page(params[:page]).per(15)
   end
 
   def faq
