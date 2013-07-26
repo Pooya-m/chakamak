@@ -11,19 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130704192442) do
+ActiveRecord::Schema.define(version: 20130726185153) do
 
   create_table "poems", force: true do |t|
     t.integer  "poet_id"
     t.integer  "user_id"
-    t.text     "content",    limit: 255
+    t.text     "content"
     t.string   "poet_name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "votes_count", default: 0
   end
 
-  add_index "poems", ["poet_id"], name: "index_poems_on_poet_id"
-  add_index "poems", ["user_id"], name: "index_poems_on_user_id"
+  add_index "poems", ["poet_id"], name: "index_poems_on_poet_id", using: :btree
+  add_index "poems", ["user_id"], name: "index_poems_on_user_id", using: :btree
 
   create_table "poets", force: true do |t|
     t.string   "poet_name"
@@ -47,8 +48,8 @@ ActiveRecord::Schema.define(version: 20130704192442) do
     t.string   "user_name"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "votes", force: true do |t|
     t.integer  "user_id"
@@ -57,7 +58,7 @@ ActiveRecord::Schema.define(version: 20130704192442) do
     t.datetime "updated_at"
   end
 
-  add_index "votes", ["poem_id"], name: "index_votes_on_poem_id"
-  add_index "votes", ["user_id"], name: "index_votes_on_user_id"
+  add_index "votes", ["poem_id"], name: "index_votes_on_poem_id", using: :btree
+  add_index "votes", ["user_id"], name: "index_votes_on_user_id", using: :btree
 
 end

@@ -21,15 +21,15 @@ class PoemsController < ApplicationController
       @po = current_user.poems.where('DATE(created_at) = ?', Time.now.utc.to_date)
     end
 
-    @poems = Poem.all.page(params[:page]).per(20)
+    @poems = Poem.order('created_at DESC').page(params[:page]).per(15)
     @vote = false
     
     if params[:vote] == "true"
-      @poems.sort! { |a,b| a.votes.count <=> b.votes.count }.reverse!
+      @poems = @poems.order('votes_count DESC') 
       @vote = true
-    else
-      @poems.sort!.reverse!
     end
+
+    Kaminari.paginate_array(@poems).page(params[:page]).per(15)
 
   end
 
