@@ -21,14 +21,14 @@ class PoemsController < ApplicationController
       @po = current_user.poems.where('DATE(created_at) = ?', Time.now.utc.to_date)
     end
 
-    @poems = Poem.all.page(params[:page]).per(10)
+    @poems = Poem.all.page(params[:page]).per(20)
     @vote = false
     
     if params[:vote] == "true"
       @poems.sort! { |a,b| a.votes.count <=> b.votes.count }.reverse!
       @vote = true
     else
-      @poems.sort!.reverse!
+      @poems.sort!
     end
 
   end
