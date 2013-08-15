@@ -140,7 +140,7 @@ div.profile_statistic {
 }
 
 div.faq{
-    padding: 20px;
+    padding: 60px;
     background:white;
     padding-right:70px;
     padding-left:70px;
@@ -148,7 +148,7 @@ div.faq{
 }
 
 body.signup{
-background: url("http://s3.picofile.com/file/7840086341/IMG_3887.jpg") no-repeat fixed center center / cover  transparent;
+background: url("/bg2.jpg") no-repeat fixed center center / cover  transparent;
 
 }
 
