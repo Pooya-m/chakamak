@@ -215,4 +215,7 @@ ul.posts {
   text-align:center;
   color:white;
   background:black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
