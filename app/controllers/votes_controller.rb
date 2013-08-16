@@ -1,28 +1,21 @@
 class VotesController < ApplicationController
+  before_filter :not_yourself, only: [:create]
 
   def create
-    if current_user.id == Poem.find(params[:id]).user_id
-      redirect_to poems_path, alert: "You can't vote to yourself"
-    end
-
-    @vote = Vote.new(user_id: current_user.id, poem_id: params[:id])
-    if @vote.save!
-      p session[:return_to]
-      redirect_to(:back)
-    else
-      #redirect_to(:back) , alert: @vote.errors.all
-    end
+    @vote = current_user.votes.create(poem_id: params[:id])
+    respond_with(@vote , location: request.referer)
   end
 
   def destroy
-    @vote = Vote.find_by(user_id: current_user.id, poem_id: params[:id])
-    if @vote.destroy!
-      p "hallow"
-      redirect_to(:back)
-    else
-      #redirect_to(:back) , alert: @vote.errors.all
-    end
+    @vote = current_user.votes.find_by(poem_id: params[:id]).destroy!
+    respond_with(@vote, location: request.referer)
+  end
 
-  end
-  end
+  private
+    def not_yourself
+      if current_user.id == Poem.find(params[:id]).user_id
+        redirect_to poems_path, alert: "Yoi can't vote to yourself!"
+      end
+    end
+end
 
