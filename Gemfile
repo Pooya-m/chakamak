@@ -45,8 +45,11 @@ gem 'jquery-turbolinks'
 
 gem 'pg'
 gem 'rails_12factor'
+gem 'nokogiri'
 
 gem 'kaminari'
+gem 'jekyll'
+gem 'bloggy'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
