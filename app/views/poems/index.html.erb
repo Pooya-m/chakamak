@@ -1,10 +1,6 @@
 <body id="poems-index">
 <div class="profile-show-poems">
-  <% if @vote %>
-      <h1><%= t(:lastest_by_vote) %> </h1>
-  <% else %>
-      <h1><%= t(:lastest) %> </h1>
-  <% end %>
+      <h1><%= @title %> </h1>
 </div>
 
 <%= render :partial => 'welcome/show' %>
@@ -12,7 +8,7 @@
 
 <br> <br>   <br> <br>
 
-<% if user_signed_in? and @po.count < 30 %>
+<% if user_signed_in? and !has_limit? %>
     <div class="new_in_index">
       <%= simple_form_for Poem.new, :html => {:class => 'form-horizontal special-form'} do |f| %>
           <%= f.input :content , placeholder: "برای شروع مصرع دوم از اینتر استفاده کنید."%>

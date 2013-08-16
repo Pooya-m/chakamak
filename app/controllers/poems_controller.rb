@@ -1,7 +1,7 @@
 class PoemsController < ApplicationController
 
   before_filter :authenticate_user! , except: [:index , :show]
-  before_filter :check_limit , only: [:new , :create]
+  before_filter :apply_limit , only: [:new , :create]
 
   def show
     @poem = Poem.find(params[:id])
@@ -16,62 +16,44 @@ class PoemsController < ApplicationController
   end
 
   def index
-
-    if user_signed_in?  
-      @po = current_user.poems.where('DATE(created_at) = ?', Time.now.utc.to_date)
-    end
-
+    @title = t(:lastest)
     @poems = Poem.order('created_at DESC').page(params[:page]).per(15)
-    @vote = false
-    
     if params[:vote] == "true"
       @poems = @poems.order('votes_count DESC') 
-      @vote = true
+      @title = t(:lastest_by_vote)
     end
-
-    Kaminari.paginate_array(@poems).page(params[:page]).per(15)
-
+    p_array(@poems)
   end
 
   def destroy
-
-    @poem = Poem.find(params[:id])
-
-    if @poem.user_id == current_user.id
-      @poem.destroy
-      redirect_to poems_path
-    else
-      redirect_to poems_path, alert: "You cannot delete this poem!"
-    end
-
+    @poem = current_user.poems.find(params[:id])
+    @poem.destroy
+    respond_with @poem
   end
 
   def create
-    @poet = Poet.find_or_initialize_by_poet_name(better(params[:poem][:poet_name]))
-    @poet.save!
-  
-    @poem = Poem.new(poet_name: better(params[:poem][:poet_name]) , content: better(clear(params[:poem][:content])), poet_id: @poet.id , user_id: current_user.id)
-    
-    if @poem.save
-      redirect_to @poem
-    else
-      render 'new'
-    end
-
+    @poem = current_user.poems.new(poem_params) 
+    @poem.save
+    respond_with @poem
   end
 
   def update
-
-    @poet = Poet.find_or_initialize_by_poet_name(better(params[:poem][:poet_name]))
-    @poet.save!
-
     @poem = current_user.poems.find(params[:id])
-    if @poem.update(poet_name: better(params[:poem][:poet_name]) , content: better(clear(params[:poem][:content])) , poet_id: @poet.id)
-      redirect_to @poem
-    else
-      render 'edit'
+    @poem.update(poem_params)
+    respond_with @poem
+  end
+
+  private
+    def poem_params
+      better(params[:poem][:poet_name])
+      better(clear(params[:poem][:content]))
+      params[:poem].permit(:poet_name , :content , :poet_id)
     end
 
-  end
+    def apply_limit
+      if has_limit?
+        redirect_to poems_path , alert: t(:poem_limit)
+      end
+    end
 
 end

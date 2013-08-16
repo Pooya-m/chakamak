@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   respond_to :html
+  helper_method :has_limit?
 
   protected
 
@@ -18,6 +19,10 @@ class ApplicationController < ActionController::Base
   end
 
   def clear(s)
+    if s.length == 0
+      return s
+    end
+
     s.strip!
     s.squeeze!(" ")
     s.gsub! "\r",""
@@ -26,6 +31,7 @@ class ApplicationController < ActionController::Base
     end
     s.gsub! "\n", "            "
     s
+
   end
 
   def user_score(user)
@@ -36,12 +42,17 @@ class ApplicationController < ActionController::Base
     score
   end
 
-  def check_limit
+  def today_count
     poems = current_user.poems.where('DATE(created_at) = ?' , Time.now.utc.to_date)
-    if poems.count >= 30
-          redirect_to poems_path , alert: t(:poem_limit)
-    end
+    poems.count
+  end
 
+  def has_limit?
+    if today_count >= 20
+      true
+    else
+      false
+    end
   end
 
   def after_sign_in_path_for(resource_or_scope)
@@ -54,6 +65,10 @@ class ApplicationController < ActionController::Base
 
   def better(string)
     string.gsub! 'ي' , 'ی' 
+  end
+
+  def p_array(array)
+    Kaminari.paginate_array(array).page(params[:page]).per(15)
   end
 
 end
