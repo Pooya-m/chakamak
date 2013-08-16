@@ -1,8 +1,9 @@
 class WelcomeController < ApplicationController
+
   def index
   end
 
-  def user_show
+  def profile_show
     @user = User.find(params[:id])
     @poems = @user.poems.order('created_at DESC').page(params[:page]).per(15)
     @upvotes = @user.votes.order('created_at DESC').page(params[:page]).per(15)
@@ -10,5 +11,6 @@ class WelcomeController < ApplicationController
 
   def faq
   end
+
 end
 

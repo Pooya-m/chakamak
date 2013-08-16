@@ -77,14 +77,17 @@ fa:
       unvote: "نمی‌پسندم"
       delete: "حذف"
       poem_new: "ثبت بیت جدید"
+    show_poem_set:
+      title: اشعار ثبت کرده    
     form:
       poem_new: "ثبت بیت جدید"
       cancel: "انصراف"
     check_limit:
   welcome:
-    user_show:
-      title: اشعار ثبت کرده
+    user_upvotes:
       title2: ابیات امتیاز داده شده
+    profile_show:
+      title: اشعار ثبت کرده
 
 
   activerecord:

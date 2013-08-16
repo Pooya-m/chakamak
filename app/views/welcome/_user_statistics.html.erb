@@ -1,0 +1,11 @@
+<div class="profile_statistic">
+  <ul class="unstyled">
+    <small>
+      <li><%= t(:username) %> : <%= @user.user_name %> </li>
+      <li><%= t(:poems_submited) %> : <%= @user.poems.count %></li>
+      <li><%= t(:votes_submited) %> : <%= @user.votes.count %></li>
+      <li><%= t(:user_score2) %> : <%= user_score(@user) %></li>
+    </small>
+  </ul>
+</div>
+

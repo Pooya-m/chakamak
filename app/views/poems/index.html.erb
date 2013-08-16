@@ -3,20 +3,7 @@
       <h1><%= @title %> </h1>
 </div>
 
-<%= render :partial => 'welcome/show' %>
-
-
+<%= render :partial => 'show_poem_set' %>
 <br> <br>   <br> <br>
-
-<% if user_signed_in? and !has_limit? %>
-    <div class="new_in_index">
-      <%= simple_form_for Poem.new, :html => {:class => 'form-horizontal special-form'} do |f| %>
-          <%= f.input :content , placeholder: "برای شروع مصرع دوم از اینتر استفاده کنید."%>
-          <%= f.input :poet_name%>
-          <div class="form-actions action_new_in_index">
-            <%= f.button :submit, :class => 'btn-primary', value: t('.poem_new') %>
-          </div>
-          </div>
-      <% end %>
-<% end %>
+<%= render :partial => 'new' %>
 </body>
