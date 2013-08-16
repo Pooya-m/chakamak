@@ -1,6 +1,6 @@
 <%= render :partial => 'welcome/first' %>
 <%= render :partial => 'welcome/second' %>
-<%= render :partial => 'welcome/third' %>
+
 
 
 
