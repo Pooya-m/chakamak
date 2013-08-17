@@ -1,4 +1,4 @@
-Jamemey::Application.routes.draw do
+Chakamak::Application.routes.draw do
 
   devise_for :users
 
