@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Chakamak::Application.config.secret_key_base = 'a8118114eb9a3322e8b4381c250ac6dbf840c48106135cb4bc3f15bc9ef3059ae40c1cbe98ce06d467f8b08949dc7973c405775fefcc0b9971864f7fc14f9787'
+Chakamak::Application.config.secret_key_base = ENV['SECRET_TOKEN']
