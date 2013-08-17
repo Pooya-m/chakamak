@@ -1,7 +1,0 @@
----
-layout: post
-published: true
-title: دوباره سلام
-permalink: "/HelloAgain.html"
----
-دوباره سلام!

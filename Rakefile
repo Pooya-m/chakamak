@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Jamemey::Application.load_tasks
+Chakamak::Application.load_tasks

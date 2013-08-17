@@ -1,6 +1,0 @@
-<%= render :partial => 'welcome/first' %>
-<%= render :partial => 'welcome/second' %>
-
-
-
-

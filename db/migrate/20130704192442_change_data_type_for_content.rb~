@@ -1,4 +1,0 @@
-class ChangeDataTypeForContent < ActiveRecord::Migration
-  def change
-  end
-end
