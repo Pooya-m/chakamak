@@ -197,7 +197,6 @@ DEPENDENCIES
   rails (= 4.0.0)
   rails-i18n
   rails_12factor
-  rename
   sass-rails (~> 4.0.0)
   sdoc
   simple_form (~> 3.0.0.rc)
