@@ -53,6 +53,8 @@ gem 'bloggy'
 
 gem 'dotenv-rails'
 
+gem 'rack-mini-profiler'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
