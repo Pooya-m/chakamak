@@ -4,12 +4,21 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2013-08-18T22:35:05+04:30</updated>
+ <updated>2013-08-18T22:59:15+04:30</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
  </author>
 
+ 
+ <entry>
+   <title>چکامک در شبکه‌های اجتماعی</title>
+   <link href="YOUR_URL/chakamak-in-social-networks.html"/>
+   <updated>2013-08-18T00:00:00+04:30</updated>
+   <id>BLOG_URL/چکامک-در-شبکه-های-اجتماعی</id>
+   <content type="html">&lt;p&gt;اکانت‌های سرویس چکامک، در توییتر و فیس‌بوک ساخته شد تا بیش از پیش، بتوانیم شما را در جریان تغییرات بگذاریم و راحت‌تر نظرات شما را بشنویم و اعمال کنیم. لینک پروفایل‌ها را در پایین همین صفحه، می‌توانید مشاهده کنید :)&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>خانه‌تکانی</title>

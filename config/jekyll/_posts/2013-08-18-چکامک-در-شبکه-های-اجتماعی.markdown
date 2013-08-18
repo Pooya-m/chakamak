@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: چکامک در شبکه‌های اجتماعی
 permalink: "/chakamak-in-social-networks.html"
 ---
