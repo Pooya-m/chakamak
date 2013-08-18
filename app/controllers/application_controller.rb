@@ -1,7 +1,10 @@
  # -*- coding: utf-8 -*-
 
 class ApplicationController < ActionController::Base
-  Rack::MiniProfiler.authorize_request
+  
+  def authorize
+    Rack::MiniProfiler.authorize_request
+  end
   before_filter :configure_permitted_parameters, if: :devise_controller?
   helper_method :user_score , :check_limit
   # Prevent CSRF attacks by raising an exception.
