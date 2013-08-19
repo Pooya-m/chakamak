@@ -44,3 +44,5 @@ gem 'sitemap_generator'
 
 gem 'friendly_id', '5.0.0.beta1'
 
+gem 'levenshtein-ffi', :require => 'levenshtein'
+

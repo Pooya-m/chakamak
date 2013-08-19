@@ -57,6 +57,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     fast-stemmer (1.0.2)
+    ffi (1.1.5)
     font-awesome-rails (3.2.1.1)
       railties (>= 3.2, < 5.0)
     friendly_id (5.0.0.beta1)
@@ -84,6 +85,9 @@ GEM
       activesupport (>= 3.0.0)
     kgio (2.8.0)
     kramdown (0.14.2)
+    levenshtein-ffi (1.0.3)
+      ffi
+      ffi (~> 1.1.5)
     liquid (2.5.1)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -198,6 +202,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   kaminari
+  levenshtein-ffi
   nokogiri
   pg
   rails (= 4.0.0)
