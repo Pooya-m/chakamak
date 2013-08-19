@@ -24,6 +24,8 @@ SitemapGenerator::Sitemap.create do
   #   Article.find_each do |article|
   #     add article_path(article), :lastmod => article.updated_at
   #   end
+  add "/welcome"
+
   User.find_each do |user|
     add "/users/#{user.slug}"
   end  
