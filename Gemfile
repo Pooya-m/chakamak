@@ -46,3 +46,7 @@ gem 'friendly_id', '5.0.0.beta1'
 
 gem 'levenshtein-ffi', :require => 'levenshtein'
 
+gem 'whenever', :require => false
+
+gem 'metamagic'
+
