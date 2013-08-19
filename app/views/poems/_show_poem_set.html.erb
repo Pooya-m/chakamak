@@ -47,8 +47,8 @@ $('body').on('click', function (e) {
 
   <div class="m4 inline inline-icon">
     <% @poems.each do |p| %>
-         <a data-original-title="جزئیات" href="#" class="information" id=<%=p.id%>><i class="icon-search"></i></a>      
-        <div class="infodiv<%=p.id%> hide">
+         <button class="information" id=<%=p.id%>><i class="icon-search" style="color: rgb(0, 136, 204)"></i></button>
+        <div class="infodiv<%=p.id%> hide" id=<%=p.id%>>
           ثبت شده توسط: <%= link_to p.user.user_name , user_show_path(p.user) %> <br>
           امتیاز: <%= p.votes.count %> <br> 
         <% if user_signed_in? %>

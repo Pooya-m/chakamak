@@ -172,3 +172,11 @@ form.my_form2{
 a.salam {
     color:black;
 }
+
+button.information {
+  background:none;
+  border:none;
+  line-height: 0px;
+  font-size: 12px;
+}
+

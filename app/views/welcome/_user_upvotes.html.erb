@@ -50,7 +50,7 @@ $('body').on('click', function (e) {
 
   <div class="m4 inline inline-icon">
     <% @upvotes.each do |p| %>
-      <a data-original-title="جزئیات" href="#" class="information" id=<%=p.id%>><i class="icon-search"></i></a>      
+      <button class="information" id="<%=p.id%>"><i class="icon-search" style="color:rgb(0, 136, 204)"></i></button>
       <div class="infodiv<%=p.id%> hide">
         ثبت شده توسط: <%= link_to p.poem.user.user_name , user_show_path(p.poem.user) %> <br>
         امتیاز: <%= p.poem.votes.count %> <br> 
