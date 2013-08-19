@@ -53,7 +53,7 @@ $('body').on('click', function (e) {
 
    	   <a data-original-title="جزئیات" href="#" class="information" id=<%=p.id%>><i class="icon-search"></i></a>      
         <div class="infodiv<%=p.id%> hide">
-          ثبت شده توسط: <%= link_to p.user.user_name , user_show_path(p.user) %> <br>
+ثبت شده توسط: <%= p.poem.user.user_name %> <br>
           امتیاز: <%= p.poem.votes.count %> <br> 
         <% if user_signed_in? %>
               <center>
