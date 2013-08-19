@@ -4,7 +4,7 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2013-08-20T04:14:37+04:30</updated>
+ <updated>2013-08-20T04:19:19+04:30</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
@@ -13,9 +13,9 @@
  
  <entry>
    <title>تغییر کارکرد لینک نمایش بیت</title>
-   <link href="YOUR_URLchange-in-show-link"/>
+   <link href="YOUR_URL/change-in-show-link.html"/>
    <updated>2013-08-20T00:00:00+04:30</updated>
-   <id>BLOG_URL./تغییر-کارکرد-لینک-نمایش-بیت</id>
+   <id>BLOG_URL/تغییر-کارکرد-لینک-نمایش-بیت</id>
    <content type="html">&lt;p&gt;پس از چندین ساعت وقت گذاشتن، موفق شدیم که تغییراتی در کارکرد لینک نمایش بیت ایجاد کنیم. به این صورت که هم اکنون به جای منتقل شدن به صفحه‌ی نمایش بیت که شامل عملیات‌هایی نظیر ویرایش و حذف است، تمامی این عملیات‌ها به همراه دکمه‌های امتیازدهی، در یک کادر بازشونده نمایش داده می‌شوند تا هم زیبایی بیشتری به خود بگیرد، و هم از انتقال بیهوده‌ی صفحات جلوگیری کند.
 &lt;br&gt;&lt;br&gt;&lt;/p&gt;
 
