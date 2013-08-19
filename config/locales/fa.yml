@@ -64,7 +64,15 @@ fa:
   poems_list: آخرین ابیات
   poems_list_by_vote: براساس امتیاز
   lastest_by_vote: لیست ابیات بر حسب امتیاز
-
+  
+  poems_index: لیست ابیات
+  poem_new: ثبت بیت
+  poem_show: نمایش بیت
+  poem_edit: ویرایش بیت
+  u_edit: ویرایش پروفایل
+  u_show: پروفایل
+  
+  
   poems:
     index:
       title: "اشعار"
