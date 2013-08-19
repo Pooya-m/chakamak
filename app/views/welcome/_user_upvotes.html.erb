@@ -50,36 +50,33 @@ $('body').on('click', function (e) {
 
   <div class="m4 inline inline-icon">
     <% @upvotes.each do |p| %>
-
-   	   <a data-original-title="جزئیات" href="#" class="information" id=<%=p.id%>><i class="icon-search"></i></a>      
-        <div class="infodiv<%=p.id%> hide">
-          ثبت شده توسط: <%= link_to p.user.user_name , user_show_path(p.user) %> <br>
-          امتیاز: <%= p.poem.votes.count %> <br> 
+      <a data-original-title="جزئیات" href="#" class="information" id=<%=p.id%>><i class="icon-search"></i></a>      
+      <div class="infodiv<%=p.id%> hide">
+        ثبت شده توسط: <%= link_to p.poem.user.user_name , user_show_path(p.poem.user) %> <br>
+        امتیاز: <%= p.poem.votes.count %> <br> 
         <% if user_signed_in? %>
               <center>
-              <% if current_user.id != p.poem.user_id %>
-              <% if Vote.exists?(poem_id: p.poem.id, user_id: current_user.id) %>
-                  <%= link_to t(:minus_html), unvote_path(p.poem.id), method: :post, title: t(:minus) , class: "btn btn-danger btn-mini" %>
-              <% else %>
-                  <%= link_to t(:plus_html), upvote_path(p.poem.id), method: :post, title: t(:plus) , class: "btn btn-mini btn-success"%>
-              <% end %>
-              <% end %>
+                <% if current_user.id != p.poem.user_id %>
+                  <% if Vote.exists?(poem_id: p.poem.id, user_id: current_user.id) %>
+                    <%= link_to t(:minus_html), unvote_path(p.poem.id), method: :post, title: t(:minus) , class: "btn btn-danger btn-mini" %>
+                  <% else %>
+                    <%= link_to t(:plus_html), upvote_path(p.poem.id), method: :post, title: t(:plus) , class: "btn btn-mini btn-success"%>
+                  <% end %>
+                <% end %>
               </center>
-    <% if p.poem.user_id == current_user.id %>
-        <%= link_to t(:edit, :default => t("helpers.links.edit")),
-                    edit_poem_path(p.poem), :class => 'btn' %>
-        <%= link_to t(:destroy, :default => t("helpers.links.destroy")),
-                    poem_path(p.poem),
+              <% if p.poem.user_id == current_user.id %>
+                <%= link_to t(:edit, :default => t("helpers.links.edit")),
+                  edit_poem_path(p.poem), :class => 'btn' %>
+                <%= link_to t(:destroy, :default => t("helpers.links.destroy")),
+                  poem_path(p.poem),
                     :method => 'delete',
                     :data => { :confirm => t(:sure, :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                     :class => 'btn btn-danger' %>
-    <% else %>
-    <% end %>
-<% end %>
-<% end %>
+              <% end %>
+        <% end %>
       </div>
       <br>
-
+    <% end %>
   </div>
 
 </div>
