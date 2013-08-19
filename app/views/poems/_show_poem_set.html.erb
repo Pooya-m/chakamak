@@ -1,3 +1,17 @@
+<script type="text/javascript">
+$(function () {
+  $('.information').each( function () { 
+    $(this).popover({
+    html: true , 
+    content: function() { return $(".infodiv"+this.id).html();},
+    placement : 'left'
+  });
+});
+});
+</script>
+
+
+
 <%= paginate @poems%>
 
 <div class="index">
@@ -22,22 +36,34 @@
 
   <div class="m4 inline inline-icon">
     <% @poems.each do |p| %>
-
-          <%= link_to t(:show_html), p, title: t(:show_poem) %>
-
+         <a data-original-title="جزئیات" href="#" class="information" id=<%=p.id%>><i class="icon-search"></i></a>      
+        <div class="infodiv<%=p.id%> hide">
+          ثبت شده توسط: <%= link_to p.user.user_name , user_show_path(p.user) %> <br>
+          امتیاز: <%= p.votes.count %> <br> 
         <% if user_signed_in? %>
-
+              <center>
               <% if current_user.id != p.user_id %>
               <% if Vote.exists?(poem_id: p.id, user_id: current_user.id) %>
-                  <%= link_to t(:minus_html), unvote_path(p.id), method: :post, title: t(:minus) %>
+                  <%= link_to t(:minus_html), unvote_path(p.id), method: :post, title: t(:minus) , class: "btn btn-danger btn-mini" %>
               <% else %>
-                  <%= link_to t(:plus_html), upvote_path(p.id), method: :post, title: t(:plus) %>
+                  <%= link_to t(:plus_html), upvote_path(p.id), method: :post, title: t(:plus) , class: "btn btn-mini btn-success"%>
               <% end %>
               <% end %>
+              </center>
+    <% if p.user_id == current_user.id %>
+        <%= link_to t(:edit, :default => t("helpers.links.edit")),
+                    edit_poem_path(p), :class => 'btn' %>
+        <%= link_to t(:destroy, :default => t("helpers.links.destroy")),
+                    poem_path(p),
+                    :method => 'delete',
+                    :data => { :confirm => t(:sure, :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                    :class => 'btn btn-danger' %>
+    <% else %>
+    <% end %>
+<% end %>
 
-        <% end %>
-
-        <br>
+      </div>
+      <br>
     <% end %>
   </div>
 </div>

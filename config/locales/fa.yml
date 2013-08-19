@@ -27,8 +27,11 @@ fa:
   footer: نوشته شده تحت فریم‌وورک RoR و ‌Bootstrap
   sign_up_html: <i class="icon-user"></i> ثبت‌نام
   sign_in_html: <i class="icon-lock"></i> ورود
-  plus_html: <i class="icon-plus" style="color:green"></i>
-  minus_html: <i class="icon-minus" style="color:red"></i>
+  #plus_html: <i class="icon-plus" style="color:green"></i>
+  #minus_html: <i class="icon-minus" style="color:red"></i>
+  plus_html: <i class="icon-plus"></i>
+  minus_html: <i class="icon-minus"></i>
+
   plus: پسندیدم
   minus: نمی‌پسندم
   delete_html: <i class="icon-remove" style="color:black"></i>
