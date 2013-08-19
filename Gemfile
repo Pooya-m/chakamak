@@ -39,3 +39,8 @@ gem 'jekyll'
 gem 'bloggy'
 
 gem 'dotenv-rails'
+
+gem 'sitemap_generator'
+
+gem 'friendly_id', '5.0.0.beta1'
+

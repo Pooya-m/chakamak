@@ -14,4 +14,13 @@ class User < ActiveRecord::Base
   has_many :votes
 
   attr_accessor :limited
+
+  extend FriendlyId
+  friendly_id :slug_candidates, use: :slugged
+  
+  def slug_candidates
+    [
+      :user_name
+    ]
+  end
 end
