@@ -1,11 +1,14 @@
 <% title t(:u_show) %>
 <%= render :partial => 'user_statistics' %>
 <div class="profile-show-poems">
-  <h1><%= t('.title') %> </h1>
+  <h1><%= t('.title1') %> </h1>
 </div>
 
 
 <%= render :partial => 'poems/show_poem_set' , locals: { :poems => @poems , :param_name => 'poems'}%>
+</div>
+<div class="profile-show-poems">
+  <h1><%= t('.title2') %> </h1>
 </div>
 <%= render :partial => 'poems/show_poem_set' , locals: { :poems => @upvotes , :param_name => 'votes' } %>
 </div>

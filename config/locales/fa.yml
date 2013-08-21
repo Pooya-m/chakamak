@@ -91,7 +91,8 @@ fa:
       delete: "حذف"
       poem_new: "ثبت بیت جدید"
     show_poem_set:
-      title: اشعار ثبت کرده    
+      title1: ابیات ثبت کرده
+      title2: ابیات امتیاز داده
     form:
       poem_new: "ثبت بیت جدید"
       cancel: "انصراف"
@@ -100,7 +101,8 @@ fa:
     user_upvotes:
       title2: ابیات امتیاز داده شده
     profile_show:
-      title: اشعار ثبت کرده
+      title1: ابیات ثبت کرده
+      title2: ابیات امتیاز داده
 
 
   activerecord:

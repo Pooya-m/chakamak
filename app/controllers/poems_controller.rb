@@ -33,7 +33,7 @@ class PoemsController < ApplicationController
   def create
     @poem = current_user.poems.new(poem_params) 
     @poem.save
-    respond_with @poem
+    respond_with @poem , location: poems_path
   end
 
   def update
