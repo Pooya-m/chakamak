@@ -1,5 +1,7 @@
-class Poem < ActiveRecord::Base
+require 'sitemap_pinger'
 
+class Poem < ActiveRecord::Base
+  #call_backs:
   before_create :create_poet
   before_update :create_poet
 
@@ -16,6 +18,10 @@ class Poem < ActiveRecord::Base
     @poet = Poet.find_or_initialize_by_poet_name(self.poet_name)
     @poet.save!
     self.poet_id = @poet.id
+  end
+
+  def ping
+    SitemapPinger.ping
   end
 
 end

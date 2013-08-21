@@ -14,5 +14,10 @@ class WelcomeController < ApplicationController
   def faq
   end
 
+  def sitemap
+    @users = User.all
+    @poems = Poem.all
+  end
+
 end
 

@@ -16,6 +16,7 @@ class PoemsController < ApplicationController
   end
 
   def index
+    p root_url
     @title = t(:lastest)
     @poems = c_paginate(Poem.order('created_at DESC'))
     if params[:vote] == "true"
