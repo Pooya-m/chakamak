@@ -23,30 +23,30 @@ $('body').on('click', function (e) {
 
 
 
-<%= paginate @poems%>
+<%= paginate poems , param_name: param_name%>
 
 <div class="index">
   <div class="m1 inline">
-    <% @poems.each do |p| %>
+    <% poems.each do |p| %>
         <%= p.content.split(/ {2,}/)[0] %>
         <br>
     <% end %>
   </div>
   <div class="m2 inline">
-    <% @poems.each do |p| %>
+    <% poems.each do |p| %>
         <%= p.content.split(/ {2,}/)[1] %>
         <br>
     <% end %>
   </div>
   <div class="m3 inline inline-icon">
-    <% @poems.each do |p| %>
+    <% poems.each do |p| %>
         <%= p.poet_name %>
         <br>
     <% end %>
   </div>
 
   <div class="m4 inline inline-icon">
-    <% @poems.each do |p| %>
+    <% poems.each do |p| %>
          <button class="information" id=<%=p.id%>><i class="icon-search" style="color: rgb(0, 136, 204)"></i></button>
         <div class="infodiv<%=p.id%> hide" id=<%=p.id%>>
           ثبت شده توسط: <%= link_to p.user.user_name , user_show_path(p.user) %> <br>

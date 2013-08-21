@@ -5,9 +5,9 @@
 </div>
 
 
-<%= render :partial => 'poems/show_poem_set' %>
+<%= render :partial => 'poems/show_poem_set' , locals: { :poems => @poems , :param_name => 'poems'}%>
 </div>
-<%= render :partial => 'user_upvotes' %>
+<%= render :partial => 'poems/show_poem_set' , locals: { :poems => @upvotes , :param_name => 'votes' } %>
 </div>
 <br> <br> <br>
 

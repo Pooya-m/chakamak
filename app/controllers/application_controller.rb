@@ -3,7 +3,7 @@
 class ApplicationController < ActionController::Base
   
   before_filter :configure_permitted_parameters, if: :devise_controller?
-  helper_method :user_score , :check_limit
+  helper_method :user_score , :check_limit , :p_array
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
@@ -66,9 +66,9 @@ class ApplicationController < ActionController::Base
   def better(string)
     string.gsub! 'ي' , 'ی' 
   end
-
-  def p_array(array)
-    Kaminari.paginate_array(array).page(params[:page]).per(15)
+  
+  def c_paginate(object , p=params[:poems])
+    object.page(p).per(APP_CONFIG['pag_num'])
   end
 
 end

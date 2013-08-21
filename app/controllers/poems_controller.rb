@@ -17,12 +17,11 @@ class PoemsController < ApplicationController
 
   def index
     @title = t(:lastest)
-    @poems = Poem.order('created_at DESC').page(params[:page]).per(15)
+    @poems = c_paginate(Poem.order('created_at DESC'))
     if params[:vote] == "true"
-      @poems = @poems.order('votes_count DESC') 
+      @poems = c_paginate(@poems.order('votes_count DESC'))
       @title = t(:lastest_by_vote)
     end
-    p_array(@poems)
   end
 
   def destroy

@@ -35,6 +35,7 @@ gem 'rails_12factor'
 gem 'nokogiri'
 
 gem 'kaminari'
+#gem 'will_paginate', '~> 3.0'
 gem 'jekyll'
 gem 'bloggy'
 

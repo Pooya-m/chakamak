@@ -9,7 +9,7 @@ meta description: "لیست ابیات ثبت شده در چکامک" ,
       <h1><%= @title %> </h1>
 </div>
 
-<%= render :partial => 'show_poem_set' %>
+<%= render :partial => 'show_poem_set' , locals: { poems: @poems , param_name: 'poems' } %>
 <br> <br>   <br> <br>
 <%= render :partial => 'new' %>
 </body>
