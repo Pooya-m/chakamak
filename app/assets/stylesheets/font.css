@@ -180,3 +180,7 @@ button.information {
   font-size: 12px;
 }
 
+.tt-hint {
+  visibility: hidden;
+}
+

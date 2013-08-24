@@ -51,3 +51,5 @@ gem 'whenever', :require => false
 
 gem 'metamagic'
 
+gem 'rails3-jquery-autocomplete', git: 'https://github.com/francisd/rails3-jquery-autocomplete'
+

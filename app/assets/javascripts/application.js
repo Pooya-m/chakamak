@@ -14,7 +14,9 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
-function to_persian(s)
+//= require typeahead
+
+/*function to_persian(s)
 {
   var number = s.replace(/\s+/g, '').split('');
   for(var i = 0; i < number.length ; i++)
@@ -59,9 +61,18 @@ function to_persian(s)
 document.getElementsByClassName("page current")[0].textContent = to_persian(document.getElementsByClassName("page current")[0].textContent);
 
 a = document.getElementsByClassName("page");
+
 for(var i = 0; i < a.length ; i++)
 {
   if(a[i].firstElementChild)
    a[i].firstElementChild.text = to_persian(a[i].firstElementChild.text);
-}
+} */
+
+$(document).ready(function($) {
+$('.typeahead').typeahead({
+    prefetch: '/poets.json',
+    cache: false
+});
+
+});
 
