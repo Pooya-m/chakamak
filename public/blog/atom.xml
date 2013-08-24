@@ -4,12 +4,27 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2013-08-21T16:49:39+04:30</updated>
+ <updated>2013-08-24T12:47:32+04:30</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
  </author>
 
+ 
+ <entry>
+   <title>تکمیل خودکار نام شاعر</title>
+   <link href="YOUR_URL/autocomplete.html"/>
+   <updated>2013-08-24T00:00:00+04:30</updated>
+   <id>BLOG_URL/تکمیل-خودکار-نام-شاعر</id>
+   <content type="html">&lt;p&gt;بسیار پیش می‌آید که هنگام ثبت بیتی جدید، ابیاتی از شاعر مورد نظر، قبلا در سایت ثبت شده باشد. لذا جهت تسهیل وارد نمودن نام شاعر هنگام ثبت ابیات، این امکان را فراهیم کردیم که این ورودی، به صورت خودکار تکمیل شود به این صورت که پیشنهاداتی را در پایین لیست نشان می‌دهد تا اگر شاعر مورد نظر شما میان آن‌ها بود، بدون نیاز به تایپ مجدد، از همان‌جا آن را انتخاب کرده.
+&lt;br&gt;
+این امکان جدید، علاوه بر تسهیل وارد کردن نام شاعر، بر زیبایی سایت نیز افزوده هست.
+&lt;br&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;/images/autocomplete.png&quot;&gt;&lt;/center&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>تغییر کارکرد لینک نمایش بیت</title>
