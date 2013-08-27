@@ -7,7 +7,10 @@ meta description: "لیست ابیات #{t(params[:id])}" ,
 <div class="profile-show-poems">
       <h1><%= "لیست ابیات #{@poet.poet_name}"%></h1>
 </div>
-  <div>
+<div class="span2">
+  <%= render partial: "poems/poets" %>
+</div>
+<div class="span10">
     <%= render :partial => 'poems/show_poem_set' , locals: { poems: @poems , param_name: 'poems' } %>
-  </div>
+</div>
   
