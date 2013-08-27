@@ -1,0 +1,13 @@
+<% 
+meta description: "لیست ابیات #{t(params[:id])}" , 
+     keywords: Poet.all.collect { |p| p.poet_name }
+%>
+
+<% title "لیست ابیات #{@poet.poet_name}" %>
+<div class="profile-show-poems">
+      <h1><%= "لیست ابیات #{@poet.poet_name}"%></h1>
+</div>
+  <div>
+    <%= render :partial => 'poems/show_poem_set' , locals: { poems: @poems , param_name: 'poems' } %>
+  </div>
+  

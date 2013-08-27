@@ -4,7 +4,7 @@ class PoemsController < ApplicationController
   before_filter :apply_limit , only: [:new , :create]
 
   def show
-    @poem = Poem.find(params[:id])
+    @poems = c_paginate(Poem.where(subject: params[:id]))
   end
 
   def edit
@@ -40,14 +40,14 @@ class PoemsController < ApplicationController
   def update
     @poem = current_user.poems.find(params[:id])
     @poem.update(poem_params)
-    respond_with @poem
+    respond_with @poem , location: poems_path
   end
 
   private
     def poem_params
       better(params[:poem][:poet_name])
       better(clear(params[:poem][:content]))
-      params[:poem].permit(:poet_name , :content , :poet_id)
+      params[:poem].permit(:poet_name , :content , :poet_id , :subject)
     end
 
     def apply_limit

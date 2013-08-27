@@ -18,12 +18,12 @@ end
   match "/sitemap.:format" => "welcome#sitemap" , via: [:get]
   match "poems/:id/upvote" => "votes#create" , via: [:post ] , :as => :upvote
   match "poems/:id/unvote" => "votes#destroy" , via: [:post ] , :as => :unvote
-
-  resources :poems
+  resources :poems 
 
   root 'welcome#index'
 
   match "/poets" => "poets#index" , via: [:get]
+  match "/poets/:id" => "poets#show" , via: [:get], :as => :poet_show
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

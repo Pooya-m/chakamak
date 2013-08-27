@@ -2,7 +2,6 @@
 body {
   font-family: 'Droid Arabic Naskh', serif;
   padding-top: 40px;
-  overflow-x:hidden;
 
 }
 table.poems {
@@ -120,7 +119,7 @@ div.m3 {
 }
 
 form.special-form{
-    margin-top:205px;
+    margin-top:130px;
 }
 
 small.inline-icon{
@@ -182,5 +181,16 @@ button.information {
 
 .tt-hint {
   visibility: hidden;
+}
+
+.index p {
+  display: inline;
+}
+
+div.poets {
+  width: auto;
+}
+.poets .well {
+  text-align: center;
 }
 

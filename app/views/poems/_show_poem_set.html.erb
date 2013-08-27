@@ -4,7 +4,7 @@ $(function () {
     $(this).popover({
     html: true , 
     content: function() { return $(".infodiv"+this.id).html();},
-    placement : 'left'
+    placement : 'right'
   });
 });
 
@@ -22,34 +22,40 @@ $('body').on('click', function (e) {
 </script>
 
 
-
-<%= paginate poems , param_name: param_name%>
-
-<div class="index">
-  <div class="m1 inline">
-    <% poems.each do |p| %>
-        <%= p.content.split(/ {2,}/)[0] %>
-        <br>
-    <% end %>
-  </div>
-  <div class="m2 inline">
-    <% poems.each do |p| %>
-        <%= p.content.split(/ {2,}/)[1] %>
-        <br>
-    <% end %>
-  </div>
-  <div class="m3 inline inline-icon">
-    <% poems.each do |p| %>
-        <%= p.poet_name %>
-        <br>
-    <% end %>
-  </div>
-
-  <div class="m4 inline inline-icon">
-    <% poems.each do |p| %>
-         <button class="information" id=<%=p.id%>><i class="icon-search" style="color: rgb(0, 136, 204)"></i></button>
-         <%= render partial: "poems/popover" , locals: { p:p } %>  
+<div class="poets span2">
+  <div class="well">
+    <h4><%= t(:poets_list_html) %></h4>
+    <% Poet.all.each do |p| %>
+      <%= link_to p.poet_name , poet_show_path(p) %>
       <br>
     <% end %>
+    <br>
+    <h4><%= t(:subjects) %> </h4>
+      <%= link_to t(:asheghane) , "/poems/asheghane" %> <br>
+      <%= link_to t(:arefane) , "/poems/arefane" %> <br>
+      <%= link_to t(:hemasi) , "/poems/hemasi" %> <br>
+      <%= link_to t(:ejtemae) , "/poems/ejtemae" %> <br>
+      <%= link_to t(:siasi) , "/poems/siasi" %> <br>
+      <%= link_to t(:akhlaghi) , "/poems/akhlaghi" %> <br>
+      <%= link_to t(:uncategorized) , "/poems/uncategorized" %>
   </div>
 </div>
+<div class="span10">
+<%= paginate poems , param_name: param_name%>
+<table class="table table-hover">
+  <tbody>
+    <% poems.each do |p| %>
+      <tr>
+        <td><%= p.content.split(/ {2,}/)[0] %></td>
+        <td><%= p.content.split(/ {2,}/)[1] %></td>
+        <td><%= p.poet_name %></td>
+        <td><button class="information" id=<%=p.id%>><i class="icon-search" style="color: rgb(0, 136, 204)"></i></button></td>
+        <%= render partial: "poems/popover" , locals: { p:p } %>  
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= render partial: "poems/new" %>
+</div>
+<br>
+

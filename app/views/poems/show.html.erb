@@ -1,23 +1,13 @@
-<% title t(:poem_show) %>
-<h1> <%= t(:show_poem) %></h1>
-<Br>
-<ul class="inline">
-  <li class="user-profile-poems"> <%= @poem.content %> </li>
-  <li>          <small> <%= @poem.poet_name %> </small>
-  </li>
-</ul>
+<% 
+meta description: "لیست ابیات #{t(params[:id])}" , 
+     keywords: Poet.all.collect { |p| p.poet_name }
+%>
 
-<% if user_signed_in? %>
-    <% if @poem.user_id == current_user.id %>
-        <%= link_to t(:edit, :default => t("helpers.links.edit")),
-                    edit_poem_path(@poem), :class => 'btn' %>
-        <%= link_to t(:destroy, :default => t("helpers.links.destroy")),
-                    poem_path(@poem),
-                    :method => 'delete',
-                    :data => { :confirm => t(:sure, :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                    :class => 'btn btn-danger' %>
-    <% else %>
-    <% end %>
-<% end %>
-<%= link_to t(:back, :default => t("helpers.links.back")),
-            poems_path, :class => 'btn'  %>
+<% title "#{t(params[:id])}" %>
+<div class="profile-show-poems">
+      <h1><%= @title %> </h1>
+</div>
+  <div>
+    <%= render :partial => 'show_poem_set' , locals: { poems: @poems , param_name: 'poems' } %>
+  </div>
+  
