@@ -48,7 +48,7 @@ $('body').on('click', function (e) {
   <div class="m4 inline inline-icon">
     <% poems.each do |p| %>
          <button class="information" id=<%=p.id%>><i class="icon-search" style="color: rgb(0, 136, 204)"></i></button>
-         <%= render partial: "popover" , locals: { p:p } %>  
+         <%= render partial: "poems/popover" , locals: { p:p } %>  
       <br>
     <% end %>
   </div>
