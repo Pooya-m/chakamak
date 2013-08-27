@@ -25,7 +25,7 @@ $('body').on('click', function (e) {
 <div class="poets span2">
   <div class="well">
     <h4><%= t(:poets_list_html) %></h4>
-    <% Poet.all.each do |p| %>
+    <% Poet.all.select{|p| p.poems.any?}.each do |p| %>
       <%= link_to p.poet_name , poet_show_path(p) %>
       <br>
     <% end %>
