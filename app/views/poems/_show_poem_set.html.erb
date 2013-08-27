@@ -22,25 +22,6 @@ $('body').on('click', function (e) {
 </script>
 
 
-<div class="poets span2">
-  <div class="well">
-    <h4><%= t(:poets_list_html) %></h4>
-    <% Poet.all.select{|p| p.poems.any?}.each do |p| %>
-      <%= link_to p.poet_name , poet_show_path(p) %>
-      <br>
-    <% end %>
-    <br>
-    <h4><%= t(:subjects) %> </h4>
-      <%= link_to t(:asheghane) , "/poems/asheghane" %> <br>
-      <%= link_to t(:arefane) , "/poems/arefane" %> <br>
-      <%= link_to t(:hemasi) , "/poems/hemasi" %> <br>
-      <%= link_to t(:ejtemae) , "/poems/ejtemae" %> <br>
-      <%= link_to t(:siasi) , "/poems/siasi" %> <br>
-      <%= link_to t(:akhlaghi) , "/poems/akhlaghi" %> <br>
-      <%= link_to t(:uncategorized) , "/poems/uncategorized" %>
-  </div>
-</div>
-<div class="span10">
 <%= paginate poems , param_name: param_name%>
 <table class="table table-hover">
   <tbody>
@@ -55,7 +36,4 @@ $('body').on('click', function (e) {
     <% end %>
   </tbody>
 </table>
-<%= render partial: "poems/new" %>
-</div>
-<br>
 

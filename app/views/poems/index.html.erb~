@@ -1,0 +1,13 @@
+<% 
+meta description: "لیست ابیات ثبت شده در چکامک" , 
+     keywords: Poet.all.collect { |p| p.poet_name }
+%>
+
+<% title "لیست ابیات" %>
+<div class="profile-show-poems">
+      <h1><%= @title %> </h1>
+</div>
+  <div>
+    <%= render :partial => 'show_poem_set' , locals: { poems: @poems , param_name: 'poems' } %>
+  </div>
+

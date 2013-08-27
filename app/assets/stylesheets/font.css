@@ -23,6 +23,7 @@ div.poems_index_title {
   height: 100%;
   width: 100%;
     margin-top: 50px;
+  text-align:center;
 }
 
 div.detail {

@@ -1,16 +1,20 @@
 <% title t(:u_show) %>
 <%= render :partial => 'user_statistics' %>
-<div class="profile-show-poems">
-  <h1><%= t('.title1') %> </h1>
-</div>
 
-
-<%= render :partial => 'poems/show_poem_set' , locals: { :poems => @poems , :param_name => 'poems'}%>
+<div class="span2">
+  <%= render partial: "poems/poets" %>
 </div>
-<div class="profile-show-poems">
-  <h1><%= t('.title2') %> </h1>
+<div class="span10">
+  <div class="row-fluid">
+    <div class="poems_index_title">
+    <h1><%= t('.title1') %> </h1>
+    </div>
+    <%= render :partial => 'poems/show_poem_set' , locals: { :poems => @poems , :param_name => 'poems'}%>
+  </div>
+  <div class="row-fluid">
+    <div class="poems_index_title">
+      <h1><%= t('.title2') %> </h1>
+    </div>
+    <%= render :partial => 'poems/show_poem_set' , locals: { :poems => @upvotes , :param_name => 'votes' } %>
+  </div>
 </div>
-<%= render :partial => 'poems/show_poem_set' , locals: { :poems => @upvotes , :param_name => 'votes' } %>
-</div>
-<br> <br> <br>
-

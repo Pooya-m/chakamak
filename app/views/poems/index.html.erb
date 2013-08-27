@@ -4,10 +4,13 @@ meta description: "لیست ابیات ثبت شده در چکامک" ,
 %>
 
 <% title "لیست ابیات" %>
-<div class="profile-show-poems">
-      <h1><%= @title %> </h1>
+<div class="poems_index_title">
+  <h1><%= @title %> </h1>
 </div>
-  <div>
-    <%= render :partial => 'show_poem_set' , locals: { poems: @poems , param_name: 'poems' } %>
-  </div>
-
+<div class="span2">
+  <%= render partial: "poems/poets" %>
+</div>
+<div class="span10">
+    <%= render :partial => 'poems/show_poem_set' , locals: { :poems => @poems , :param_name => 'poems'}%>
+    <%= render partial: "poems/new" %>
+</div>

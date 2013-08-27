@@ -1,0 +1,18 @@
+<div class="poets">
+  <div class="well">
+    <h4><%= t(:poets_list_html) %></h4>
+    <% Poet.all.select{|p| p.poems.any?}.each do |p| %>
+      <%= link_to p.poet_name , poet_show_path(p) %>
+      <br>
+    <% end %>
+    <br>
+    <h4><%= t(:subjects) %> </h4>
+      <%= link_to t(:asheghane) , "/poems/asheghane" %> <br>
+      <%= link_to t(:arefane) , "/poems/arefane" %> <br>
+      <%= link_to t(:hemasi) , "/poems/hemasi" %> <br>
+      <%= link_to t(:ejtemae) , "/poems/ejtemae" %> <br>
+      <%= link_to t(:siasi) , "/poems/siasi" %> <br>
+      <%= link_to t(:akhlaghi) , "/poems/akhlaghi" %> <br>
+      <%= link_to t(:uncategorized) , "/poems/uncategorized" %>
+  </div>
+</div>
