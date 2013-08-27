@@ -1,7 +1,7 @@
 <%= simple_form_for @poem, :html => { :class => 'form-horizontal' } do |f| %>
   <%= f.input :content , placeholder: "برای شروع مصرع دوم از اینتر استفاده کنید."%>
   <%= f.input :poet_name , input_html: { class: 'typeahead' }  %>
-  <%= f.input :subject , collection: subject_collection %>
+  <%= f.input :subject , collection: subject_collection , selected: "asheghane" %>
 
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' , value: t(:submit) %>
