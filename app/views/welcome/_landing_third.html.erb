@@ -1,15 +1,39 @@
-<div class="container">
-  <div class="hero-unit main-unit" align="center">
-    <h1 class="text-center">امکانات</h1>
-    <br>
-    <p class="text-center">
-    <ul class="unstyled">
-      <li><h3><i class="icon-check icon-check-index"></i><%= t(:f1) %></h3></li>
-      <li><h3><i class="icon-check icon-check-index"></i><%= t(:f2) %></h3></li>
-      <li><h3><i class="icon-check icon-check-index"></i><%= t(:f3) %></h3></li>
-    </ul>
-    </p>
-  </div>
+<div class="hero-unit main-unit">
+<div class="detail_first" id="3">
+  <h1><%= t(:detail_more) %> </h1>
 </div>
 
 
+  <div class="row-fluid">
+    <ul class="thumbnails t2">
+      <li class="span4">
+        <div class="thumbnail">
+          <i class="icon-strikethrough icon-6"></i>
+        </div>
+        <div class="caption">
+          <h4><%= t(:free) %> </h4>
+          <p><%= t(:free_desc) %> </p>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <i class="icon-road icon-6"></i>
+        </div>
+        <div class="caption">
+          <h4><%= t(:simple) %> </h4>
+          <p> <%= t(:simple_desc) %> </p>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <i class="icon-github icon-6"></i>
+        </div>
+        <div class="caption">
+          <h4><%= t(:open) %> </h4>
+          <p><%= t(:open_desc) %> </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>

@@ -53,6 +53,7 @@ div.main-unit{
     color: white;
     margin-right:-87px;
     margin-left:-87px;
+    padding: 115px;
 }
 
 div.sign-up{
@@ -83,8 +84,7 @@ div.sign-up-2{
 }
 
 div.footer{
-        background:black;
-        color:white;
+        color:black;
         text-align:center;
 
 }
@@ -193,5 +193,46 @@ div.poets {
 }
 .poets .well {
   text-align: center;
+}
+
+.hero-unit h1 {
+  font-size: 90px;
+}
+
+.hero-unit 
+
+p.main {
+  padding-right:100px;
+  padding-left:100px;
+}
+
+i.icon-6 {
+  font-size:10em;
+}
+
+.t2 {
+  font-size: 13px;
+}
+
+.thumbnail {
+  text-align:center;
+  border: 0px;
+}
+
+.caption h4 {
+  text-align: center;
+}
+
+.row-fluid h1 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.hero-unit h1 {
+  padding-bottom: 50px;
+}
+
+h1.felan {
+  font-size:200px;
 }
 

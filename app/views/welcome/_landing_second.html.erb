@@ -1,27 +1,44 @@
-<div class="detail_first" id="2">
-  <h1><%= t(:detail) %> </h1>
-  <p><%= t(:detail_more) %> </p>
-</div>
-
-<div class="detail">
-
-  <div class="row-fluid">
-    <div class="span4">
-       <%= image_tag "nomoney.gif" %>
-      <h2><%= t(:free) %></h2>
-      <p class="free"> <%= t(:free_desc) %> </p>
-    </div>
-    <div class="span4">
-      <%= image_tag "esimple.gif" %>
-      <h2 class="simple"><%= t(:simple) %> </h2>
-      <p class="simple"> <%= t(:simple_desc) %> </p>
-    </div>
-
-    <div class="span4">
-      <%= image_tag "circle.gif" %>
-      <h2><%= t(:open) %> </h2>
-      <p><%= t(:open_desc) %> </p>
-      <p><%= t(:open_desc_html) %> </p>
-    </div>
+<div class="hero-unit main-unit">
+<div class="row-fluid">
+  <div id="2">
+  <h1 ><%= t(:tt1) %> </h1>
   </div>
+  <ul class="thumbnails t2">
+    <li class="span4">
+      <div class="thumbnail">
+        <i class="icon-eye-open icon-6"></i>
+      </div>
+      <div class="caption">
+        <h4>مرور کنید!</h4>
+        <p>
+          <%= t(:f1) %>
+        </p>
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <i class="icon-thumbs-up icon-6"></i>
+      </div>
+      <div class="caption">
+        <h4>امتیاز بدهید!</h4>
+        <p>
+          <%= t(:f2) %>
+        </p>
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <i class="icon-retweet icon-6"></i>
+      </div>
+      <div class="caption">
+        <h4>به‌اشتراک بگذارید!</h4>
+        <p>
+          <%= t(:f3) %>
+        </p>
+      </div>
+    </li>
+  </ul>
 </div>
+</div>
+
+
