@@ -24,7 +24,7 @@ end
 
   match "/poets" => "poets#index" , via: [:get]
   match "/poets/:id" => "poets#show" , via: [:get], :as => :poet_show
-
+  match "/poems/category/:id"=> "poems#category_show", via: [:get], :as => :category_show
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

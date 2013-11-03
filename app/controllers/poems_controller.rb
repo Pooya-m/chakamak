@@ -4,6 +4,11 @@ class PoemsController < ApplicationController
   before_filter :apply_limit , only: [:new , :create]
 
   def show
+    @poems = c_paginate(Poem.where(id: params[:id])) #Poem.where(subject: params[:id]))
+    #@poem = Poem.find(params[:id])
+  end
+
+  def category_show
     @poems = c_paginate(Poem.where(subject: params[:id]))
   end
 
