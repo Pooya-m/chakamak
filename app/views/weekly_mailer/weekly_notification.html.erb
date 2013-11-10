@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body dir="rtl">
+  <h1>ابیات ثبت شده در چکامک در این هفته</h1>
+  
+  <table class="table table-hover">
+    <tbody>
+      <% @poems.each do |p| %>
+      <tr>
+        <td><%= p.content.split(/ {2,}/)[0] %></td>
+        <td><%= p.content.split(/ {2,}/)[1] %></td>
+
+        <td>از <%= p.poet_name %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <p> جهت مشاهده‌ی لیست کامل ابیات ثبت شده در این هفته، به <a href=<%=@url%>>لیست ابیات</a> مراجعه کنید. </p>
+</body>
+</html>

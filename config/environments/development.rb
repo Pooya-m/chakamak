@@ -31,4 +31,13 @@ Chakamak::Application.configure do
   config.assets.debug = true
 
   config.assets.version = '1.1'
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.mandrillapp.com',
+    port:                 587,
+    domain:               'chakamak.ir',
+    user_name:            'ibtkm2009@gmail.com',
+    password:             ENV["MANDRILL_API_KEY"]
+  }
 end

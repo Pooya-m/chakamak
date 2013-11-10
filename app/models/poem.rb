@@ -24,4 +24,8 @@ class Poem < ActiveRecord::Base
     SitemapPinger.ping
   end
 
+  def self.get_weekly_poems
+    self.where('created_at >= ?', 1.week.ago)
+  end
+
 end
